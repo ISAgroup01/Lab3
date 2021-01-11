@@ -2,43 +2,52 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use ieee.numeric_std.all;
+use WORK.RISCV_package.all;
+
 
 entity RISC is
 	port(
-		I_MEM_read    : in  std_logic_vector(32-1 downto 0);
-		I_MEM_address : out std_logic_vector(32-1 downto 0);
-		D_MEM_read    : in  std_logic_vector(32-1 downto 0);
-		D_MEM_address : out std_logic_vector(32-1 downto 0);
-		D_MEM_write   : out std_logic_vector(32-1 downto 0));
+		I_MEM_read    : in  std_logic_vector(nb_i-1 downto 0);
+		I_MEM_address : out std_logic_vector(nb_i-1 downto 0);
+		D_MEM_read    : in  std_logic_vector(nb_i-1 downto 0);
+		D_MEM_address : out std_logic_vector(nb_i-1 downto 0);
+		D_MEM_write   : out std_logic_vector(nb_i-1 downto 0));
 end entity;
 
 architecture structural of RISC is
 --Component
 component mux2to1
-	Port(A   :  IN   std_logic_vector(32-1 downto 0);
-	     B   :  IN   std_logic_vector(32-1 downto 0);
+	Port(A   :  IN   std_logic_vector(nb_i-1 downto 0);
+	     B   :  IN   std_logic_vector(nb_i-1 downto 0);
 		  sel :  IN   std_logic;
-		  S   :  OUT  std_logic_vector(32-1 downto 0));
+		  S   :  OUT  std_logic_vector(nb_i-1 downto 0));
 end component;
 component REG
-	Port (REG_IN    :	In	signed(32-1 downto 0);
+	Port (REG_IN    :	In	signed(nb_i-1 downto 0);
 		   REG_EN    :	In	std_logic;
 	      REG_CLK   :	In	std_logic;
          REG_RESET :	In	std_logic;
-         REG_OUT   : Out signed(32-1 downto 0));
+         REG_OUT   : Out signed(nb_i-1 downto 0));
 end component;
---Fetch signal
-signal new_PC, sig_PC, PC_in, branch_PC : std_logic_vector(32 -1 downto 0) := (others => '0');
-signal PCSrc, PC_enable : std_logic;
---Decode signal
-signal PC_ID, ID_instr : std_logic_vector(32 -1 downto 0);
---Execute signal
-signal PC_EX : std_logic_vector(32-1 downto 0);
-signal CU_WB_ex, CU_MEM_ex : std_logic;
---Mem signal
-signal CU_WB_m : std_logic;
---WB signal
 
+--Fetch signal
+signal new_PC, sig_PC, PC_in, branch_PC : std_logic_vector(nb_i-1 downto 0) := (others => '0');
+signal PCSrc, PC_enable, IF_ID_en : std_logic;
+--Decode signal
+signal PC_ID, ID_instr : std_logic_vector(nb_i -1 downto 0);
+signal CU_WB_dec, CU_MEM_dec, CU_EX_dec, Reg_Data1, Reg_Data2 : std_logic_vector(nb_i -1 downto 0);
+signal ID_EX_en : std_logic;
+--Execute signal
+signal PC_EX : std_logic_vector(nb_i-1 downto 0);
+signal CU_WB_ex, CU_MEM_ex, CU_EX_ex, Reg_Data1_ex, Reg_Data2_ex, Reg_Write_reg_EX : std_logic_vector(nb_i-1 downto 0);
+signal ALU_in2, ALU_res, AddSum1, AddSum2, AddSum_res : std_logic_vector(nb_i-1 downto 0);
+signal ALUSrc, ALU_zero, EX_MEM_en : std_logic;
+--Mem signal
+signal CU_WB_m, CU_MEM_m, ALU_res_m, Reg_Data1_m, Reg_Write_reg_m, MemDataout : std_logic_vector(nb_i-1 downto 0);
+signal MEM_WB_en, ALU_zero_m, MemRead, MemWrite : std_logic;
+--WB signal
+signal MemDataout_wb, ALU_res_wb, Reg_Write_reg, Reg_Write_data : std_logic_vector(nb_i-1 downto 0);
+signal MEMReg : std_logic;
 --------------------
 --CU signal
 --RISC_CLK, RISC_RST
@@ -60,6 +69,7 @@ begin
 	-- INSERT INSTRUCTION MEMORY --
 	-- Input  : sig_PC
 	-- Output : I_MEM_read
+	-- Output : I_MEM_address
 	
 	REG_IFtoID1 : REG Port Map(REG_IN => sig_PC, REG_EN => IF_ID_en, REG_CLK => RISC_CLK,
 										REG_RESET => RISC_RST, REG_OUT => PC_ID);
@@ -101,7 +111,8 @@ begin
 										
 	REG_IDtoEX7 : REG Port Map(REG_IN => , REG_EN => ID_EX_en, REG_CLK => RISC_CLK, REG_RESET => RISC_RST, REG_OUT => );
 	REG_IDtoEX8 : REG Port Map(REG_IN => , REG_EN => ID_EX_en, REG_CLK => RISC_CLK, REG_RESET => RISC_RST, REG_OUT => );
-	REG_IDtoEX9 : REG Port Map(REG_IN => , REG_EN => ID_EX_en, REG_CLK => RISC_CLK, REG_RESET => RISC_RST, REG_OUT => Reg_Write_reg_EX);
+	REG_IDtoEX9 : REG Port Map(REG_IN => , REG_EN => ID_EX_en, REG_CLK => RISC_CLK, 
+										REG_RESET => RISC_RST, REG_OUT => Reg_Write_reg_EX);
 
 --Execute-------------------------------------------------------------------------------------------------------------------------
 

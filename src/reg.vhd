@@ -1,13 +1,14 @@
 library IEEE;
 use IEEE.std_logic_1164.all; 
 use ieee.numeric_std.all;
+use WORK.RISCV_package.all;
 
 entity REG is
-	Port (REG_IN    :	In	signed(32-1 downto 0);
+	Port (REG_IN    :	In	signed(nb_i-1 downto 0);
 		   REG_EN    :	In	std_logic;
 	      REG_CLK   :	In	std_logic;
          REG_RESET :	In	std_logic;
-         REG_OUT   : Out signed(32-1 downto 0));
+         REG_OUT   : Out signed(nb_i-1 downto 0));
 end REG;
 
 architecture REGSYNCH of REG is -- REGISTER flip flop D with syncronous reset
