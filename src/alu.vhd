@@ -1,7 +1,5 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
-use IEEE.std_logic_unsigned.all;
-use IEEE.std_logic_arith.all;
 use IEEE.numeric_std.all;
 use WORK.constants.all;
 use WORK.alu_types.all;
@@ -22,11 +20,11 @@ P_ALU: process (FUNC, DATA1, DATA2)
 
   begin
     case FUNC is
-	when ADD      =>  OUTALU <= DATA1 + DATA2 ; 
-	when SUB      =>  OUTALU <= DATA1 - DATA2 ;
+	when ADD      =>  OUTALU <= std_logic_vector(unsigned(DATA1) + unsigned(DATA2)) ; 
+	when SUB      =>  OUTALU <= std_logic_vector(unsigned(DATA1) - unsigned(DATA2)) ;
 	when BITAND   =>  OUTALU <= DATA1 and DATA2;
 	when BITXOR   =>  OUTALU <= DATA1 xor DATA2;
-	when FUNCASR  =>  OUTALU <= shift_right(signed(DATA1), to_integer(unsigned(DATA2))); -- arithmetic shift right
+	when FUNCASR  =>  OUTALU <= std_logic_vector(shift_right(signed(DATA1), to_integer(unsigned(DATA2)))); -- arithmetic shift right
                                                               
 	when others => null;
     end case; 

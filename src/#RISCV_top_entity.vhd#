@@ -114,13 +114,7 @@ begin
 	-- Output : ALU_zero
 	-- Output : ALU_res
 	
-	-- INSERT AddSum --
-	-- Input  : AddSum1 
-	-- Input  : AddSum2
-	-- Output : AddSum_res
-	
-	--CU_WB
-	REG_EXtoMEM1 : REG Port Map(REG_IN => CU_WB_ex, REG_EN => EX_MEM_en, REG_CLK => RISC_CLK,
+	-- INSERT AddSum --	REG_EXtoMEM1 : REG Port Map(REG_IN => CU_WB_ex, REG_EN => EX_MEM_en, REG_CLK => RISC_CLK,
 										 REG_RESET => RISC_RST, REG_OUT => CU_WB_m);
 	--CU_MEM
 	REG_EXtoMEM2 : REG Port Map(REG_IN => CU_MEM_ex, REG_EN => EX_MEM_en, REG_CLK => RISC_CLK,

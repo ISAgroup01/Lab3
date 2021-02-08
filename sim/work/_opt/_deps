@@ -1,0 +1,12 @@
+H 2141964 11 3 0 4 4 0 0 0 0
+L 4 ieee 19 $MODEL_TECH/../ieee
+L 3 std 18 $MODEL_TECH/../std
+L 4 work 6 ./work
+D 20 ./work.alu(behavior) 7R`PPzIzHGUm0lmcTc[nZ3 2 1
+D 16 ./work.alu_types U?eCWaLR5_ZL4:R4Se;l[1 0 1
+D 16 ./work.constants if?]?TRkPaGUhc5`f6AN]0 1 1
+D 18 ./work.tbalu(test) 48LJ]g>GCl3h[55e[>Die2 3 1
+2 0  1 H>KhPP8Za5]4Z@^Ofl0e03 3 3 1
+2 0  0 2HUf1TkG:amNIk>5mC^0Q0 0 0 1
+2 0  0 72o7H9L<741>a1Mg3m:;i3 1 1 1
+2 0  1 bfFe^?^XoNRGDXW?VNW`M3 2 2 1
