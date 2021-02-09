@@ -1,14 +1,19 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-use WORK.constants.all;
-use WORK.alu_types.all;
+use WORK.RISCV_package.all;
 
 entity ALU is
+<<<<<<< HEAD
   generic (N : integer := 32);
   port 	 ( FUNC: IN aluOp;
            DATA1, DATA2: IN std_logic_vector(N-1 downto 0);
            OUTALU: OUT std_logic_vector(N-1 downto 0));
+=======
+  port 	 ( FUNC: IN TYPE_OP;
+           DATA1, DATA2: IN std_logic_vector(nb_d-1 downto 0);
+           OUTALU: OUT std_logic_vector(nb_d-1 downto 0));
+>>>>>>> 6c889019c7e037543887cd1f107e74537cde36d7
 end ALU;
 
 architecture BEHAVIOR of ALU is
