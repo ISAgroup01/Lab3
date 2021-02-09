@@ -13,7 +13,7 @@ entity RISC is
 		D_MEM_write   : out std_logic_vector(nb_i-1 downto 0));
 end entity;
 
-<<<<<<< HEAD
+
 architecture structural of RISC is
 --Component
 component mux2to1
@@ -22,7 +22,7 @@ component mux2to1
 		  sel :  IN   std_logic;
 		  S   :  OUT  std_logic_vector(32-1 downto 0));
 end component;
-=======
+
 architecture structural of RISC is
 --Component
 component mux2to1
@@ -32,35 +32,33 @@ component mux2to1
 		  sel :  IN   std_logic;
 		  S   :  OUT  std_logic_vector(nb_i-1 downto 0));
 end component;
->>>>>>> 6c889019c7e037543887cd1f107e74537cde36d7
+
 component REG
 	Generic (N : integer := 32);
 	Port (REG_IN    :	In	signed(N-1 downto 0);
-		   REG_EN    :	In	std_logic;
-	      REG_CLK   :	In	std_logic;
+		 REG_EN    :	In	std_logic;
+	     REG_CLK   :	In	std_logic;
          REG_RESET :	In	std_logic;
-<<<<<<< HEAD
          REG_OUT   : Out signed(32-1 downto 0));
 end component;
 --Fetch signal
 signal new_PC, sig_PC, PC_in, branch_PC : std_logic_vector(32 -1 downto 0) := (others => '0');
 signal PCSrc, PC_enable : std_logic;
-=======
+
          REG_OUT   : Out signed(N-1 downto 0));
 end component;
 component CSA
 	Port( A_csa    : IN  std_logic_vector(64 - 1 downto 0);
-		   B_csa    : IN  std_logic_vector(64 - 1 downto 0);
-		   Cin_csa  : IN  std_logic;
-		   Cout_csa : OUT std_logic;
-		   S_csa    : OUT std_logic_vector(64 - 1 downto 0));
+		  B_csa    : IN  std_logic_vector(64 - 1 downto 0);
+		  Cin_csa  : IN  std_logic;
+		  Cout_csa : OUT std_logic;
+		  S_csa    : OUT std_logic_vector(64 - 1 downto 0));
 end component;
 
 --Fetch signal
 signal new_PC, PC_IF, PC_in, branch_PC : std_logic_vector(nb_d-1 downto 0) := (others => '0');
 signal PCSrc, PC_enable, IF_ID_en, Co_csa : std_logic;
 
->>>>>>> 6c889019c7e037543887cd1f107e74537cde36d7
 --Decode signal
 signal PC_ID, ID_instr_ext : std_logic_vector(nb_d -1 downto 0);
 signal ID_instr, ext_instr : std_logic_vector(nb_i -1 downto 0);
@@ -96,7 +94,6 @@ signal MEMReg : std_logic;
 --------------------
 begin
 
-<<<<<<< HEAD
 --Fetch-----------------------------------------------------------------------------------------------
 	
 	mux_IF : mux2to1 Port Map (A => new_PC, B => branch_PC, sel => PCSrc, S => PC_in);
@@ -109,7 +106,7 @@ begin
 	
 	-- INSERT INSTRUCTION MEMORY --
 	-- Input  : sig_PC
-=======
+
 --Fetch-----------------------------------------------------------------------------------------------
 	
 	mux_IF : mux2to1 Generic Map(N => nb_d)
@@ -127,7 +124,6 @@ begin
 	
 	-- INSTRUCTION MEMORY --
 	-- Input  : I_MEM_address
->>>>>>> 6c889019c7e037543887cd1f107e74537cde36d7
 	-- Output : I_MEM_read
 	
 	REG_IFtoID1 : REG Generic Map(N => nb_d)
@@ -182,7 +178,6 @@ begin
 							Port Map(REG_IN => Reg_Data2, REG_EN => ID_EX_en, REG_CLK => RISC_CLK,
 										REG_RESET => RISC_RST, REG_OUT => Reg_Data2_ex);
 										
-<<<<<<< HEAD
 	REG_IDtoEX7 : REG Port Map(REG_IN => , REG_EN => ID_EX_en, REG_CLK => RISC_CLK, REG_RESET => RISC_RST, REG_OUT => );
 	REG_IDtoEX8 : REG Port Map(REG_IN => , REG_EN => ID_EX_en, REG_CLK => RISC_CLK, REG_RESET => RISC_RST, REG_OUT => );
 	REG_IDtoEX9 : REG Port Map(REG_IN => , REG_EN => ID_EX_en, REG_CLK => RISC_CLK, REG_RESET => RISC_RST, REG_OUT => Reg_Write_reg_EX);
@@ -190,7 +185,7 @@ begin
 --Execute-------------------------------------------------------------------------------------------------------------------------
 
 	mux_EX : mux2to1 Port Map (A => Reg_Data1_ex, B => , sel => ALUSrc, S => ALU_in2);
-=======
+
 	REG_IDtoEX7 : REG Generic Map(N => nb_d)
 							Port Map(REG_IN => ID_instr_ext, REG_EN => ID_EX_en, REG_CLK => RISC_CLK, 
 							         REG_RESET => RISC_RST, REG_OUT => EX_instr);
@@ -216,7 +211,6 @@ begin
 	-- Input   : alu_ctrl_EX
 	-- Output  : ALUOp
 	-- Output  : ALU_sel
->>>>>>> 6c889019c7e037543887cd1f107e74537cde36d7
 	
 	-- INSERT ALU --
 	-- Input  : Reg_Data1_ex
@@ -244,13 +238,12 @@ begin
 	REG_EXtoMEM5 : REG Generic Map(N => nb_d)
 							 Port Map(REG_IN => ALU_res, REG_EN => EX_MEM_en, REG_CLK => RISC_CLK,
 										 REG_RESET => RISC_RST, REG_OUT => ALU_res_m);
-<<<<<<< HEAD
+
 	REG_EXtoMEM6 : REG Port Map(REG_IN => Reg_Data1_ex, REG_EN => EX_MEM_en, REG_CLK => RISC_CLK,
 								       REG_RESET => RISC_RST, REG_OUT => Reg_Data1_m);
 	REG_EXtoMEM7 : REG Port Map(REG_IN => Reg_Write_reg_EX, REG_EN => EX_MEM_en, REG_CLK => RISC_CLK,
 										 REG_RESET => RISC_RST, REG_OUT => Reg_Write_reg_m);
 
-=======
 	REG_EXtoMEM6 : REG Generic Map(N => nb_d)
 							 Port Map(REG_IN => Reg_Data2_ex, REG_EN => EX_MEM_en, REG_CLK => RISC_CLK,
 								       REG_RESET => RISC_RST, REG_OUT => Reg_Data2_m);
@@ -258,7 +251,6 @@ begin
 							 Port Map(REG_IN => Reg_Write_reg_EX, REG_EN => EX_MEM_en, REG_CLK => RISC_CLK,
 										 REG_RESET => RISC_RST, REG_OUT => Reg_Write_reg_m);
 
->>>>>>> 6c889019c7e037543887cd1f107e74537cde36d7
 --Mem---------------------------------------------------------------------------------------------------------------------------------------
 
 	--Branch
@@ -281,14 +273,14 @@ begin
 	REG_MEMtoWB2 : REG Generic Map(N => nb_d)
 							 Port Map(REG_IN => D_MEM_read, REG_EN => MEM_WB_en, REG_CLK => RISC_CLK, 
 										 REG_RESET => RISC_RST, REG_OUT => MemDataout_wb);
-<<<<<<< HEAD
+
 	REG_MEMtoWB3 : REG Port Map(REG_IN => ALU_res_m, REG_EN => MEM_WB_en, REG_CLK => RISC_CLK, 
 										 REG_RESET => RISC_RST, REG_OUT => ALU_res_wb);
 	REG_MEMtoWB4 : REG Port Map(REG_IN => Reg_Write_reg_m, REG_EN => MEM_WB_en, REG_CLK => RISC_CLK, 
 										 REG_RESET => RISC_RST, REG_OUT => Reg_Write_reg);
 --WB----------------------------------------------------------------------------------------------------------------------------------------
 	mux_WB : mux2to1 Port Map (A => ALU_res_wb, B => MemDataout_wb, sel => MEMReg, S => Reg_Write_data);
-=======
+
 	REG_MEMtoWB3 : REG Generic Map(N => nb_d)
 							 Port Map(REG_IN => ALU_res_m, REG_EN => MEM_WB_en, REG_CLK => RISC_CLK, 
 										 REG_RESET => RISC_RST, REG_OUT => ALU_res_wb);
@@ -298,5 +290,5 @@ begin
 --WB----------------------------------------------------------------------------------------------------------------------------------------
 	mux_WB : mux2to1 Generic Map(N => nb_d)
 					     Port Map (A => ALU_res_wb, B => MemDataout_wb, sel => MEMReg, S => Reg_Write_data);
->>>>>>> 6c889019c7e037543887cd1f107e74537cde36d7
+
 end architecture;

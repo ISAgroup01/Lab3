@@ -10,8 +10,7 @@ ENTITY RegFile IS
       WriteData        : IN  std_logic_vector(31 downto 0);
       ReadData1        : OUT std_logic_vector(31 downto 0);
       ReadData2        : OUT std_logic_vector(31 downto 0);
-
-      RegWrite         : IN  std_logic;
+      --RegWrite         : IN  std_logic;
       Clock            : IN std_logic
    );
 END RegFile;
