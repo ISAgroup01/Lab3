@@ -51,31 +51,37 @@ end CU;
 
 architecture CU_HW of CU is
   type mem_array is array (integer range 0 to MICROCODE_MEM_SIZE - 1) of std_logic_vector(CW_SIZE - 1 downto 0);
-  signal cw_mem : mem_array := ("111100010000111", -- R type: IS IT CORRECT?
+  signal cw_mem : mem_array := ("111100010000111", -- LW
+                                "000000000000000",  
+                                "111011111001100", -- I-type  
+                                "000000000000000", -- AUIPC
+                                "000000000000000", -- SW
                                 "000000000000000",
-                                "111011111001100", -- J (0X02) instruction encoding corresponds to the address to this ROM
-                                "000000000000000", -- JAL to be filled
-                                "000000000000000", -- BEQZ to be filled
-                                "000000000000000", -- BNEZ
-                                "000000000000000", -- 
+                                "000000000000000", -- R-type
+                                "000000000000000", -- LUI
                                 "000000000000000",
-                                "000000000000000", -- ADD i (0X08): FILL IT!!!
-                                "000000000000000");-- to be completed (enlarged and filled)
+                                "000000000000000",
+                                "000000000000000",
+                                "000000000000000", 
+                                "000000000000000", -- BEQ
+                                "000000000000000", -- JAL
+                                "000000000000000",
+                                "000000000000000");
                                 
                                 
   signal IR_opcode : std_logic_vector(OP_CODE_SIZE -1 downto 0);  -- OpCode part of IR
-  signal IR_func : std_logic_vector(FUNC_SIZE downto 0);   -- Func part of IR when Rtype
+  signal IR_func : std_logic_vector(FUNC_SIZE downto 0);   -- Func part of IR
   signal cw   : std_logic_vector(CW_SIZE - 1 downto 0); -- full control word read from cw_mem
 
 
   -- control word is shifted to the correct stage
   signal cw1 : std_logic_vector(CW_SIZE -1 downto 0); -- first stage
-  signal cw2 : std_logic_vector(CW_SIZE - 1 - 2 downto 0); -- second stage
-  signal cw3 : std_logic_vector(CW_SIZE - 1 - 5 downto 0); -- third stage
-  signal cw4 : std_logic_vector(CW_SIZE - 1 - 9 downto 0); -- fourth stage
-  signal cw5 : std_logic_vector(CW_SIZE -1 - 13 downto 0); -- fifth stage
+  signal cw2 : std_logic_vector(CW_SIZE - 1 - 2  downto 0); -- second stage
+  signal cw3 : std_logic_vector(CW_SIZE - 1 - 6  downto 0); -- third stage
+  signal cw4 : std_logic_vector(CW_SIZE - 1 - 12 downto 0); -- fourth stage
+  signal cw5 : std_logic_vector(CW_SIZE -1 - 17 downto 0); -- fifth stage
 
-  signal aluOpcode_i: aluOp := NOP; -- ALUOP defined in package
+  signal aluOpcode_i: aluOp := NOP; --NOP defined in package
   signal aluOpcode1: aluOp := NOP;
   signal aluOpcode2: aluOp := NOP;
   signal aluOpcode3: aluOp := NOP;
@@ -87,7 +93,9 @@ begin  -- cu_rtl
   IR_opcode(5 downto 0) <= IR_IN(6  downto 0);
   IR_func(10 downto 0)  <= IR_IN(14 downto 12);
 
-  cw <= cw_mem(conv_integer(IR_opcode));
+  -- for the set of instructions considered these are the bits that identifies
+  -- them univocally
+  cw <= cw_mem(conv_integer(IR_opcode(5 downto 3) & IR_opcode(1)));
 
 
   -- stage one control signals
@@ -95,25 +103,28 @@ begin  -- cu_rtl
   NPC_LATCH_EN <= cw1(CW_SIZE - 2);
   
   -- stage two control signals
-  RegA_LATCH_EN   <= cw2(CW_SIZE - 3);
-  RegB_LATCH_EN   <= cw2(CW_SIZE - 4);
+  Reg1_LATCH_EN   <= cw2(CW_SIZE - 3);
+  Reg2_LATCH_EN   <= cw2(CW_SIZE - 4);
   RegIMM_LATCH_EN <= cw2(CW_SIZE - 5);
+  RegD_LATCH_EN   <= cw2(CW_SIZE - 6);
   
   -- stage three control signals
-  MUXA_SEL      <= cw3(CW_SIZE - 6);
-  MUXB_SEL      <= cw3(CW_SIZE - 7);
-  ALU_OUTREG_EN <= cw3(CW_SIZE - 8);
-  EQ_COND       <= cw3(CW_SIZE - 9);
-  
+  MUX_SEL             <= cw3(CW_SIZE - 7);
+  ADD_LATCH_EN        <= cw3(CW_SIZE - 8);
+  ALU_OUTREG_LATCH_EN <= cw3(CW_SIZE - 9);
+  Reg_LATCH_EN        <= cw3(CW_SIZE - 10);
+  EQ_COND             <= cw3(CW_SIZE - 11);
+  RegD1_LATCH_EN      <= cw3(CW_SIZE - 12);
   -- stage four control signals
-  DRAM_WE      <= cw4(CW_SIZE - 10);
-  LMD_LATCH_EN <= cw4(CW_SIZE - 11);
-  JUMP_EN      <= cw4(CW_SIZE - 12);
-  PC_LATCH_EN  <= cw4(CW_SIZE - 13);
+  MEM_WE              <= cw4(CW_SIZE - 13);
+  DATA_MEM_LATCH_EN   <= cw4(CW_SIZE - 14);
+  BYPASS_MEM_LATCH_EN <= cw4(CW_SIZE - 15);
+  JUMP_EN             <= cw4(CW_SIZE - 16);
+  RegD2_LATCH_EN      <= cw4(CW_SIZE - 17);
   
   -- stage five control signals
-  WB_MUX_SEL <= cw5(CW_SIZE - 14);
-  RF_WE      <= cw5(CW_SIZE - 15);
+  WB_MUX_SEL <= cw5(CW_SIZE - 18);
+  RF_WE      <= cw5(CW_SIZE - 19);
 
 
   -- process to pipeline control words

@@ -7,11 +7,8 @@ entity ALU is
   generic (N : integer := 32);
   port 	 ( FUNC: IN aluOp;
            DATA1, DATA2: IN std_logic_vector(N-1 downto 0);
-           OUTALU: OUT std_logic_vector(N-1 downto 0));
-
-  port 	 ( FUNC: IN TYPE_OP;
-           DATA1, DATA2: IN std_logic_vector(nb_d-1 downto 0);
-           OUTALU: OUT std_logic_vector(nb_d-1 downto 0));
+           OUTALU: OUT std_logic_vector(N-1 downto 0);
+           FLAG0:  out std_logic));
 end ALU;
 
 architecture BEHAVIOR of ALU is
