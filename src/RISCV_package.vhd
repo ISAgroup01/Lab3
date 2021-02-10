@@ -4,8 +4,7 @@ use ieee.numeric_std.all;
 
 PACKAGE RISCV_package is
   
-  constant nb_i : integer := 32; --Number of bits instruction
-  constant nb_d : integer := 64; --Number of bits data
+  constant nb : integer := 32; --Number of bits
   constant nb_reg : integer := 5; --Number of register
 --  type TYPE_OP is (ADD, SUB, BITAND, BITXOR--,  FUNCASR);
   type aluOp is (
