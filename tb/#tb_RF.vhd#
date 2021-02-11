@@ -1,0 +1,68 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+USE IEEE.std_logic_unsigned.all;
+use IEEE.numeric_std.all;
+use IEEE.std_logic_arith.all;
+use WORK.constants.all;
+
+entity TB_RF is
+end TB_RF;
+
+architecture TEST of TB_RF is
+   
+------------------------------------------------------------------------------------------
+  -- COMPONENTS
+-----------------------------------------------------------------------------------------
+	
+component RegFile IS
+   PORT(
+      ReadRegister1    : IN  std_logic_vector(4 downto 0);
+      ReadRegister2    : IN  std_logic_vector(4 downto 0);
+      WriteRegister    : IN  std_logic_vector(4 downto 0);
+      WriteData        : IN  std_logic_vector(31 downto 0);
+      ReadData1        : OUT std_logic_vector(31 downto 0);
+      ReadData2        : OUT std_logic_vector(31 downto 0);
+      
+      RegWrite         : IN  std_logic; --Enable signal
+      Reset            : IN std_logic; --active high (1) reset
+      Clock            : IN std_logic
+   );
+END COMPONENT;
+
+---------------------------------------------------------------------------------------------
+--SIGNALS
+---------------------------------------------------------------------------------------------
+
+signal sig_RegWrite : in std_logic;
+signal sig_Reset    : in std_logic;
+signal sig_Clock    : in std_logic;
+
+signal sig_WriteRegister : in std_logic_vector(4 downto 0);
+signal sig_ReadRegister1 : in std_logic_vector(4 downto 0);
+signal sig_ReadRegister2 : in std_logic_vector(4 downto 0);
+
+signal sig_WriteData : in std_logic_vector(31 downto 0);
+
+begin 
+		
+	UUT : RegFile
+	Port Map (ReadRegister1 => sig_ReadRegister1,
+                  ReadRegister2 => sig_ReadRegister2,
+                  WriteRegister => sig_WriteRegister,
+                  ); 
+
+
+        OP1 <= "0000000000110101";
+        OP2 <= "0000000000010110", "0000000000000011" after 10 ns;
+	FUNC_CODE <= 	ADD after 2 ns, 
+		     	SUB after 4 ns, 
+			BITAND after 6 ns, 
+			BITXOR after 8 ns, 
+			FUNCASR after 10 ns; 
+	             
+
+end TEST;
+
+
+
+

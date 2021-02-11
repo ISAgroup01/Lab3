@@ -182,7 +182,7 @@ begin  -- cu_rtl
                 -- I type
 		when "0010011" =>
                         case IR_funct is
-                                when "000" => aluOpcode_i <= ADDI;
+                                when "000" => aluOpcode_i <= ADD;
                                 when "101" => aluOpcode_i <= SRAI;
                                 when "111" => aluOpcode_i <= ANDI;
                                 when others => aluOpcode_i <= NOP;
@@ -190,9 +190,9 @@ begin  -- cu_rtl
                 -- BEQ
 		--when "1100011" => aluOpcode_i <= BEQ;
                 -- LW
-		when "0000011" => aluOpcode_i <= LW; 
+		when "0000011" => aluOpcode_i <= ADD; 
                 -- SW
-                when "0100011" => aluOpcode_i <= SW;
+                when "0100011" => aluOpcode_i <= ADD;
                 -- JAL
                 --when "1101111" => aluOpcode_i <= JAL;
                 -- AUIPC

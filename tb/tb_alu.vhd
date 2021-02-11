@@ -32,11 +32,12 @@ begin
 
         OP1 <= "0000000000110101";
         OP2 <= "0000000000010110", "0000000000000011" after 10 ns;
-	FUNC_CODE <= 	ADD after 2 ns, 
-		     	SUB after 4 ns, 
-			BITAND after 6 ns, 
-			BITXOR after 8 ns, 
-			FUNCASR after 10 ns; 
+	FUNC_CODE <= 	ADD  after 2 ns, 
+		     	EXOR after 4 ns, 
+		        SLT  after 6 ns, 
+			SRAI after 8 ns, 
+			ANDI after 10 ns,
+                        LUI  after 12 ns; 
 	             
 
 end TEST;

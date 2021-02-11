@@ -10,7 +10,9 @@ ENTITY RegFile IS
       WriteData        : IN  std_logic_vector(31 downto 0);
       ReadData1        : OUT std_logic_vector(31 downto 0);
       ReadData2        : OUT std_logic_vector(31 downto 0);
-      --RegWrite         : IN  std_logic;
+      
+      RegWrite         : IN  std_logic; --Enable signal
+      Reset            : IN std_logic; --active high (1) reset
       Clock            : IN std_logic
    );
 END RegFile;
@@ -22,10 +24,10 @@ architecture STRUCTURAL of RegFile is
   component REG is
   	Port (
           REG_IN    :	IN	 std_logic_vector(31 downto 0);
-  	      REG_EN    :	IN	 std_logic;
-  	      REG_CLK   :	IN	 std_logic;
+			 REG_EN    :	IN	 std_logic;
+			 REG_CLK   :	IN	 std_logic;
           REG_RESET :	IN	 std_logic;
-          REG_OUT   : OUT  std_logic_vector (31 downto 0));
+          REG_OUT   :   OUT std_logic_vector (31 downto 0));
   end component;
 
   component mux32_generic is
@@ -68,7 +70,7 @@ architecture STRUCTURAL of RegFile is
       mux_in30    : in  std_logic_vector(n-1 downto 0);
       mux_in31    : in  std_logic_vector(n-1 downto 0);
 
-      mux_sel    : in  std_logic_vector(5 downto 0);
+      mux_sel    : in  std_logic_vector(4 downto 0);
       mux_out    : out std_logic_vector(n-1 downto 0)
     );
   end component;
@@ -77,6 +79,8 @@ architecture STRUCTURAL of RegFile is
      PORT(
           WriteRegister   : IN std_logic_vector(4 downto 0);
           WriteData       : IN std_logic_vector(31 downto 0);
+
+          Enable          : in std_logic;
 
           ToReg0          : OUT std_logic_vector(31 downto 0);
           ToReg1          : OUT std_logic_vector(31 downto 0);
@@ -131,7 +135,7 @@ architecture STRUCTURAL of RegFile is
 
   begin
 
-write_logic : WriteRegister_logic port map(WriteRegister => WriteRegister, WriteData => WriteData,
+write_logic : WriteRegister_logic port map(WriteRegister => WriteRegister, WriteData => WriteData, Enable => RegWrite,
                                           ToReg0 => sig_2REG_IN(0), ToReg1 => sig_2REG_IN(1), ToReg2 => sig_2REG_IN(2),
                                           ToReg3 => sig_2REG_IN(3), ToReg4 => sig_2REG_IN(4), ToReg5 => sig_2REG_IN(5),
                                           ToReg6 => sig_2REG_IN(6), ToReg7 => sig_2REG_IN(7), ToReg8 => sig_2REG_IN(8),
@@ -146,24 +150,24 @@ write_logic : WriteRegister_logic port map(WriteRegister => WriteRegister, Write
 
                                           ToReg27 => sig_2REG_IN(27), ToReg28 => sig_2REG_IN(28), ToReg29 => sig_2REG_IN(29),
                                           ToReg30 => sig_2REG_IN(30), ToReg31 => sig_2REG_IN(31)
-                                          )
+                                          );
 
-REG  : for i in 0 to 31 generate
-  REG port map  (
-                  REG_IN => sig_2REG_IN(i);
-                  REG_EN => '1';
-                  REG_CLK => Clock;
-                  REG_RESET => '1'; --reset active low (disabled)
-                  REG_OUT => sig_2mux
-                )
-end generate;
+REG_loop  : for i in 0 to 31 generate
+  REG_unit: REG port map  (
+                  REG_IN => sig_2REG_IN(i),
+                  REG_EN => '1',
+                  REG_CLK => Clock,
+                  REG_RESET => Reset,
+                  REG_OUT => sig_2mux(i)
+                );
+end generate REG_loop;
 
 MUX1 : mux32_generic port map(
                           mux_in0 => sig_2mux(0), mux_in1 => sig_2mux(1), mux_in2 => sig_2mux(2), mux_in3 => sig_2mux(3), mux_in4 => sig_2mux(4),
                           mux_in5 => sig_2mux(5), mux_in6 => sig_2mux(6), mux_in7 => sig_2mux(7), mux_in8 => sig_2mux(8), mux_in9 => sig_2mux(9),
 
                           mux_in10 => sig_2mux(10), mux_in11 => sig_2mux(11), mux_in12 => sig_2mux(12), mux_in13 => sig_2mux(13), mux_in14 => sig_2mux(14),
-                          mux_in15 => sig_2mux(15), mux_in16 => sig_2mux(16), mux_in 17=> sig_2mux(17), mux_in18 => sig_2mux(18), mux_in19 => sig_2mux(19),
+                          mux_in15 => sig_2mux(15), mux_in16 => sig_2mux(16), mux_in17=> sig_2mux(17), mux_in18 => sig_2mux(18), mux_in19 => sig_2mux(19),
 
                           mux_in20 => sig_2mux(20), mux_in21 => sig_2mux(21), mux_in22 => sig_2mux(22), mux_in23 => sig_2mux(23), mux_in24 => sig_2mux(24),
                           mux_in25 => sig_2mux(25), mux_in26 => sig_2mux(26), mux_in27 => sig_2mux(27), mux_in28 => sig_2mux(28), mux_in29 => sig_2mux(29),
@@ -178,7 +182,7 @@ MUX2 : mux32_generic port map(
                           mux_in5 => sig_2mux(5), mux_in6 => sig_2mux(6), mux_in7 => sig_2mux(7), mux_in8 => sig_2mux(8), mux_in9 => sig_2mux(9),
 
                           mux_in10 => sig_2mux(10), mux_in11 => sig_2mux(11), mux_in12 => sig_2mux(12), mux_in13 => sig_2mux(13), mux_in14 => sig_2mux(14),
-                          mux_in15 => sig_2mux(15), mux_in16 => sig_2mux(16), mux_in 17=> sig_2mux(17), mux_in18 => sig_2mux(18), mux_in19 => sig_2mux(19),
+                          mux_in15 => sig_2mux(15), mux_in16 => sig_2mux(16), mux_in17=> sig_2mux(17), mux_in18 => sig_2mux(18), mux_in19 => sig_2mux(19),
 
                           mux_in20 => sig_2mux(20), mux_in21 => sig_2mux(21), mux_in22 => sig_2mux(22), mux_in23 => sig_2mux(23), mux_in24 => sig_2mux(24),
                           mux_in25 => sig_2mux(25), mux_in26 => sig_2mux(26), mux_in27 => sig_2mux(27), mux_in28 => sig_2mux(28), mux_in29 => sig_2mux(29),
@@ -186,6 +190,6 @@ MUX2 : mux32_generic port map(
                           mux_in30 => sig_2mux(30), mux_in31 => sig_2mux(31),
 
                           mux_sel => ReadRegister2, mux_out => ReadData2
-                          )
+                          );
 
 end architecture;

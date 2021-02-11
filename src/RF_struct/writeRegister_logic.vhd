@@ -1,11 +1,13 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
-USE ieee.std_logic_arith.all;
+USE ieee.numeric_std.all;
 
 ENTITY WriteRegister_logic IS
    PORT(
         WriteRegister   : IN std_logic_vector(4 downto 0);
         WriteData       : IN std_logic_vector(31 downto 0);
+
+        Enable          : in std_logic;
 
         ToReg0          : OUT std_logic_vector(31 downto 0);
         ToReg1          : OUT std_logic_vector(31 downto 0);
@@ -47,9 +49,14 @@ END WriteRegister_logic;
 
 architecture BEHAVIOR of WriteRegister_logic is
 
-  process(WriteRegister)
+begin
+
+  process(WriteData, WriteRegister)
   begin
-    case WriteRegister
+
+    if (Enable = '1') then
+    
+    case WriteRegister is
     when std_logic_vector(to_unsigned(0, 5)) => ToReg0 <= WriteData;
     when std_logic_vector(to_unsigned(1, 5)) => ToReg1 <= WriteData;
     when std_logic_vector(to_unsigned(2, 5)) => ToReg2 <= WriteData;
@@ -85,7 +92,10 @@ architecture BEHAVIOR of WriteRegister_logic is
 
     when std_logic_vector(to_unsigned(30, 5)) => ToReg30 <= WriteData;
     when std_logic_vector(to_unsigned(31, 5)) => ToReg31 <= WriteData;
+    when others  => ToReg0 <= WriteData;
     end case;
-  end process;
 
-begin
+    end if;
+  end process;
+  
+end BEHAVIOR;

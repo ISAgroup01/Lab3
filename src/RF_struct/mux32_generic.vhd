@@ -47,7 +47,7 @@ entity mux32_generic is
   );
 end entity;
 
-architecture BEHAVIOR of mux51_generic is
+architecture BEHAVIOR of mux32_generic is
 	begin
 	process(mux_sel)
 	begin

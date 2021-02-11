@@ -9,7 +9,8 @@ entity FETCH is
 		  PC_sel : IN std_logic_vector;
 		  fetch_CLK : IN std_logic;
 		  fetch_RST : IN std_logic;
-		  PC_out : OUT std_logic_vector(nb-1downto 0));
+		  JAL_value : OUT std_logic_vector(nb-1 downto 0);
+		  PC_out : OUT std_logic_vector(nb-1 downto 0));
 end FETCH;
 
 architecture STUCT of FETCH is
@@ -49,5 +50,5 @@ begin
 	Port Map (A_csa=> PC_out_tmp, B_csa=> std_logic_vector(to_unsigned(4, 32)), Cin_csa=>'0', Cout_csa=>Co_csa, S_csa=>PC_new); 
 	
 	PC_out <= PC_out_tmp;
-
+	JAL_value <= PC_new;
 end STRUCT;
