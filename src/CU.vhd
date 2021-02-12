@@ -1,10 +1,8 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
---use ieee.std_logic_arith.all;
-use work.myTypes.all;
+use WORK.RISCV_package.all;
 use ieee.numeric_std.all;
---use work.all;
 
 entity CU is
   generic (
@@ -13,7 +11,7 @@ entity CU is
     OP_CODE_SIZE       :     integer := 7;  -- Op Code Size
     ALU_OPC_SIZE       :     integer := 4;  -- ALU Op Code Word Size
     IR_SIZE            :     integer := 32;  -- Instruction Register Size    
-    CW_SIZE            :     integer := 20);  -- Control Word Size
+    CW_SIZE            :     integer := 21);  -- Control Word Size
   port (
     Clk                : in  std_logic;  -- Clock
     Rst                : in  std_logic;  -- Reset:Active-Low
@@ -58,26 +56,26 @@ end CU;
 
 architecture CU_HW of CU is
   type mem_array is array (integer range 0 to MICROCODE_MEM_SIZE - 1) of std_logic_vector(CW_SIZE - 1 downto 0);
-  signal cw_mem : mem_array := ("11101110100101001111", -- LW
-                                "00000000000000000000",  
-                                "11101110100100101001", -- I-type  
-                                "11001101000100001111", -- AUIPC
-                                "11111010110010000000", -- SW
-                                "00000000000000000000",
-                                "11110100100100101001", -- R-type
-                                "11001110100100101001", -- LUI
-                                "00000000000000000000",
-                                "00000000000000000000",
-                                "00000000000000000000",
-                                "00000000000000000000", 
-                                "11111001001000010000", -- BEQ
-                                "11001101000100011101", -- JAL
-                                "00000000000000000000",
-                                "00000000000000000000");
+  signal cw_mem : mem_array := ("111011110100101001111", -- LW
+                                "000010000000000000000",  
+                                "111011110100100101001", -- I-type  
+                                "110011101000100001111", -- AUIPC
+                                "111111010110010000000", -- SW
+                                "000000000000000000000",
+                                "111110100100100101001", -- R-type
+                                "110011110100100101001", -- LUI
+                                "000000000000000000000",
+                                "000000000000000000000",
+                                "000000000000000000000",
+                                "000000000000000000000", 
+                                "111111001001000010000", -- BEQ
+                                "110011101000100011101", -- JAL
+                                "000000000000000000000",
+                                "000000000000000000000");
                                 
                                 
-  signal IR_opcode : std_logic_vector(OP_CODE_SIZE -1 downto 0);  -- OpCode part of IR
-  signal IR_func : std_logic_vector(FUNC_SIZE downto 0);   -- Func part of IR
+  signal IR_opcode : std_logic_vector(6 downto 0);  -- OpCode part of IR
+  signal IR_func : std_logic_vector(2 downto 0);   -- Func part of IR
   signal cw   : std_logic_vector(CW_SIZE - 1 downto 0); -- full control word read from cw_mem
 
 
@@ -97,13 +95,13 @@ architecture CU_HW of CU is
  
 begin  -- cu_rtl
 
-  IR_opcode(5 downto 0) <= IR_IN(6  downto 0);
-  IR_func(10 downto 0)  <= IR_IN(14 downto 12);
+  IR_opcode <= IR_IN(6  downto 0);
+  IR_func  <= IR_IN(14 downto 12);
 
   -- for the set of instructions considered, these are the bits that identifies
   -- them univocally
-  cw <= cw_mem(conv_integer(IR_opcode(5 downto 3) & IR_opcode(1)));
-
+  --cw <= cw_mem(to_integer(unsigned'(IR_opcode(6 downto 4) & IR_opcode(2))));
+  cw <= cw_mem(to_integer(unsigned'(IR_opcode(6) & IR_opcode(5) & IR_opcode(4) & IR_opcode(2))));
 
   -- stage one control signals
   IR_LATCH_EN  <= cw1(CW_SIZE - 1);
@@ -152,9 +150,9 @@ begin  -- cu_rtl
     elsif Clk'event and Clk = '1' then  -- rising clock edge
       cw1 <= cw;
       cw2 <= cw1(CW_SIZE - 1 - 2 downto 0);
-      cw3 <= cw2(CW_SIZE - 1 - 5 downto 0);
-      cw4 <= cw3(CW_SIZE - 1 - 9 downto 0);
-      cw5 <= cw4(CW_SIZE -1 - 13 downto 0);
+      cw3 <= cw2(CW_SIZE - 1 - 7 downto 0);
+      cw4 <= cw3(CW_SIZE - 1 - 13 downto 0);
+      cw5 <= cw4(CW_SIZE -1 - 18 downto 0);
 
       aluOpcode1 <= aluOpcode_i;
       aluOpcode2 <= aluOpcode1;
@@ -176,23 +174,23 @@ begin  -- cu_rtl
 			case IR_func is
 				when "000" => aluOpcode_i <= ADD;
 				when "100" => aluOpcode_i <= EXOR;
-                                when "010" => aluOpcode_i <= SLT;
+            when "010" => aluOpcode_i <= SLT;
 				when others => aluOpcode_i <= NOP;
 			end case;
                 -- I type
 		when "0010011" =>
-                        case IR_funct is
-                                when "000" => aluOpcode_i <= ADDI;
+                        case IR_func is
+                                when "000" => aluOpcode_i <= ADD;
                                 when "101" => aluOpcode_i <= SRAI;
                                 when "111" => aluOpcode_i <= ANDI;
                                 when others => aluOpcode_i <= NOP;
                         end case;
                 -- BEQ
-		--when "1100011" => aluOpcode_i <= BEQ;
+		when "1100011" => aluOpcode_i <= BEQ;
                 -- LW
-		when "0000011" => aluOpcode_i <= LW; 
+		when "0000011" => aluOpcode_i <= ADD; 
                 -- SW
-                when "0100011" => aluOpcode_i <= SW;
+                when "0100011" => aluOpcode_i <= ADD;
                 -- JAL
                 --when "1101111" => aluOpcode_i <= JAL;
                 -- AUIPC

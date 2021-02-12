@@ -20,6 +20,20 @@ begin
 	opcode <= IMM_IN(6 downto 0);  --retireve opcode from IR 
 	--funct  <= IMM_IN(14 downto 0); --retireve funct from IR
 	
+  Sign : process(IMM_IN)
+  begin
+    if(IMM_IN(31)='0') then
+      ext_i <= (others => '0');
+		ext_s <= (others => '0');
+		ext_b <= (others => '0');
+		ext_j <= (others => '0');
+    else
+      ext_i <= (others => '1');
+		ext_s <= (others => '1');
+		ext_b <= (others => '1');
+		ext_j <= (others => '1');
+    end if;
+  end process Sign;
   -- purpose: Generation of Immediate value
   -- type   : combinational
   -- inputs : opcode
@@ -33,25 +47,25 @@ begin
 		
 		-- I-type
 		when "0010011" => --I
-			ext_i <= (others => IMM_IN(31));
+			--ext_i <= (others => IMM_IN(31));
 			IMM_OUT <= ext_i & IMM_IN(31 downto 20);
 		when "0000011" => --LW
-			ext_i <= (others => IMM_IN(31));
+			--ext_i <= (others => IMM_IN(31));
 			IMM_OUT <= ext_i & IMM_IN(31 downto 20);
 		
 		-- S-type
 		when "0100011" => --SW
-			ext_s <= (others => IMM_IN(31));
+			--ext_s <= (others => IMM_IN(31));
 			IMM_OUT <= ext_s & IMM_IN(31 downto 25) & IMM_IN(11 downto 7);
 		
 		-- B-type
 		when "1100011" => --BEQ
-			ext_b <= (others => IMM_IN(31));
+			--ext_b <= (others => IMM_IN(31));
 			IMM_OUT <= ext_b & IMM_IN(31) & IMM_IN(7) & IMM_IN(30 downto 25) & IMM_IN(11 downto 8) & '0';
 		
 		-- J-type
 		when "1101111" => --JAL
-			ext_j <= (others => IMM_IN(31));
+			--ext_j <= (others => IMM_IN(31));
 			IMM_OUT <= ext_j & IMM_IN(31) & IMM_IN(19 downto 12) & IMM_IN(20) & IMM_IN(30 downto 21) & '0';
 		
 		-- U-type

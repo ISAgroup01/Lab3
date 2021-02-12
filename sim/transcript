@@ -8,47 +8,23 @@
 # //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
-# vsim work.TBALU 
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
-# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
-# Loading work.constants
-# Loading work.alu_types
-# Loading work.tbalu(test)#1
-# Loading work.alu(behavior)#1
-add waves *
-run 40 ns
-vcom -93 -work ./work ../tb/tb_alu.vhd
-# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package numeric_std
-# -- Loading package constants
-# -- Loading package alu_types
-# -- Compiling entity tbalu
-# -- Compiling architecture test of tbalu
-# -- Compiling configuration alu_test
-# -- Loading entity tbalu
-# -- Loading architecture test of tbalu
-# -- Loading entity alu
-# -- Loading configuration cfg_alu_behavioral
-vsim work.TBALU
-# vsim work.TBALU 
+# vsim work.tb_cu 
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading /software/mentor/modelsim_6.2g/linux/../std.standard
 # Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
 # Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
 # Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
 # Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
-# Loading work.constants
-# Loading work.alu_types
-# Loading work.tbalu(test)#1
-# Loading work.alu(behavior)#1
+# Loading work.riscv_package
+# Loading work.tb_cu(test)#1
+# Loading work.cu(cu_hw)#1
 add waves *
-run 40 ns
-exit
+add wave sim:/tb_cu/cu_instance/cw
+add wave sim:/tb_cu/cu_instance/cw
+add wave sim:/tb_cu/cu_instance/aluopcode_i
+add wave sim:/tb_cu/cu_instance/aluopcode1
+add wave sim:/tb_cu/cu_instance/aluopcode2
+add wave sim:/tb_cu/cu_instance/aluopcode3
+run 1 ms
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_cu/cu_instance

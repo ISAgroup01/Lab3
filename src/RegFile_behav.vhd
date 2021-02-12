@@ -13,7 +13,7 @@ ENTITY RegFile_behav IS
       ReadData2        : OUT std_logic_vector(31 downto 0);
       
       RegWrite         : IN  std_logic; --Enable signal
-      Reset            : IN std_logic; --active high (1) reset
+      Reset            : IN std_logic; --active low (0) reset
       Clock            : IN std_logic
    );
 END RegFile_behav;
@@ -23,7 +23,7 @@ architecture behavioral of RegFile_behav is
         -- suggested structures
   subtype REG_ADDR is natural range 0 to ((2**5)-1); -- using natural type
 	type REG_ARRAY is array(REG_ADDR) of std_logic_vector(31 downto 0);
-	signal REGISTERS : REG_ARRAY := (others=> (others => '0'));
+	signal REGISTERS : REG_ARRAY;
 
 begin
 
@@ -33,7 +33,7 @@ begin
 
       if Clock' event and Clock='1' then
 
-         if Reset = '0' then
+         if Reset = '1' then
            
           if RegWrite = '1' then
 
@@ -49,7 +49,7 @@ begin
            
            end if; --RegWrite
 
-          else --Reset = '1'
+          else --Reset = '0'
 
             REGISTERS <= (others=> (others => '0'));
 

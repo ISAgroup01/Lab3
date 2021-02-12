@@ -5,15 +5,15 @@ use WORK.RISCV_package.all;
 
 entity FETCH is
 	Port(
-		  PC_b : IN std_logic_vector(nb-1downto 0);
-		  PC_sel : IN std_logic_vector;
+		  PC_b : IN std_logic_vector(nb-1 downto 0);
+		  PC_sel : IN std_logic;
 		  fetch_CLK : IN std_logic;
 		  fetch_RST : IN std_logic;
 		  JAL_value : OUT std_logic_vector(nb-1 downto 0);
 		  PC_out : OUT std_logic_vector(nb-1 downto 0));
 end FETCH;
 
-architecture STUCT of FETCH is
+architecture STRUCT of FETCH is
 component mux2to1
 	Generic (N : integer := 32);
 	Port(A   :  IN   std_logic_vector(N-1 downto 0);
@@ -23,11 +23,11 @@ component mux2to1
 end component;
 component REG
 	Generic (N : integer := 32);
-	Port (REG_IN    :	In	signed(N-1 downto 0);
+	Port (REG_IN    :	In	std_logic_vector(N-1 downto 0);
 		   REG_EN    :	In	std_logic;
 	      REG_CLK   :	In	std_logic;
          REG_RESET :	In	std_logic;
-         REG_OUT   : Out signed(N-1 downto 0));
+         REG_OUT   : Out std_logic_vector(N-1 downto 0));
 end component;
 component CSA
 	Port( A_csa    : IN  std_logic_vector(32 - 1 downto 0);

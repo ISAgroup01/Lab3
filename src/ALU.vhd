@@ -8,7 +8,7 @@ entity ALU is
   port 	 ( FUNC: IN aluOp;
            DATA1, DATA2: IN std_logic_vector(N-1 downto 0);
            OUTALU: OUT std_logic_vector(N-1 downto 0);
-           FLAG0:  out std_logic));
+           FLAG0:  out std_logic);
 end ALU;
 
 architecture BEHAVIOR of ALU is
@@ -32,9 +32,12 @@ P_ALU: process (FUNC, DATA1, DATA2)
         --when ADDI     => OUTALU <= std_logic_vector(signed(DATA1) + signed(DATA2));
         when SRAI     => OUTALU <= std_logic_vector(shift_right(signed(DATA1), to_integer(signed(DATA2)))); -- arithmetic shift right
         when ANDI     => OUTALU <= DATA1 and DATA2;
-        --when LW       =>;
-        --when SW       =>;
-        when LUI      => OUTALU <= DATA2;                                                              
+        when LUI      => OUTALU <= DATA2;
+        when BEQ      => if DATA1 = DATA2  then
+                           FLAG0 <= '1';
+                         else
+                           FLAG0 <= '0';
+                         end if;
 	when others => null;
     end case; 
   end process P_ALU;

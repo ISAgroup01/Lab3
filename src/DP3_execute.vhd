@@ -9,19 +9,19 @@ entity EXECUTE is
 	     DATA2_ex : IN std_logic_vector(nb-1 downto 0);
 		  IMM : IN std_logic_vector(nb-1 downto 0);
 		  ALUSrc : IN std_logic;
-		  ALUOpcode : IN std_logic;
+		  ALUOpcode : IN aluOp;
 		  PC_out : OUT std_logic_vector(nb-1 downto 0);
 		  Zero : OUT std_logic;
 		  ALU_res_ex : OUT std_logic_vector(nb-1 downto 0));
 end EXECUTE;
 
-architecture STUCT of EXECUTE is
+architecture STRUCT of EXECUTE is
 component ALU
   generic (N : integer := 32);
   port 	 ( FUNC: IN aluOp;
            DATA1, DATA2: IN std_logic_vector(N-1 downto 0);
            OUTALU: OUT std_logic_vector(N-1 downto 0);
-           FLAG0:  out std_logic));
+           FLAG0:  out std_logic);
 end component;
 component CSA
 	Port( A_csa    : IN  std_logic_vector(32 - 1 downto 0);
@@ -37,6 +37,7 @@ component mux2to1
 		  sel :  IN   std_logic;
 		  S   :  OUT  std_logic_vector(N-1 downto 0));
 end component;
+
 signal IMMx2, ALU_in2 : std_logic_vector(nb-1 downto 0);
 signal Co_csa : std_logic;
 begin
