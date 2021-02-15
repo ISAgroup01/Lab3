@@ -8,23 +8,1144 @@
 # //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
-# vsim work.tb_cu 
+# vsim work.TB_RISCV 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading work.riscv_package
+# Loading work.tb_riscv(tb)#1
+# Loading work.risc(structural)#1
+# Loading work.fetch(struct)#1
+# Loading work.mux2to1(behavioral)#1
+# Loading work.reg(regsynch)#1
+# Loading work.csa(struct)#1
+# Loading work.rca(struct)
+# Loading work.fa(struct)
+# Loading work.mux2to1(behavioral)#2
+# Loading work.mux2to1(behavioral)#3
+# Loading work.cu(cu_hw)#1
+# Loading work.decode(struct)
+# Loading work.regfile_behav(behavioral)
+# Loading work.imm_gen(behavioral)
+# Loading work.reg(regsynch)#2
+# Loading work.execute(struct)#1
+# Loading work.alu(behavior)#1
+# Loading work.reg_1(regsynch)
+# Loading work.mux4to1(behavioral)#1
+run 100ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv/risc_v/dp_cu
+ls
+# DATA_MEMORY.txt
+# RegFile_behav.vhd
+# sim_script.txt
+# transcript
+# vsim.wlf
+# work
+source sim_script.txt
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package riscv_package
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity fa
+# -- Compiling architecture struct of fa
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity mux2to1
+# -- Compiling architecture behavioral of mux2to1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity mux4to1
+# -- Compiling architecture behavioral of mux4to1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity reg
+# -- Compiling architecture regsynch of reg
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity reg_1
+# -- Compiling architecture regsynch of reg_1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity imm_gen
+# -- Compiling architecture behavioral of imm_gen
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity rca
+# -- Compiling architecture struct of rca
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity csa
+# -- Compiling architecture struct of csa
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity alu
+# -- Compiling architecture behavior of alu
+# -- Compiling configuration cfg_alu_behavioral
+# -- Loading entity alu
+# -- Loading architecture behavior of alu
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity regfile_behav
+# -- Compiling architecture behavioral of regfile_behav
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity fetch
+# -- Compiling architecture struct of fetch
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity decode
+# -- Compiling architecture struct of decode
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity execute
+# -- Compiling architecture struct of execute
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity cu
+# -- Compiling architecture cu_hw of cu
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity risc
+# -- Compiling architecture structural of risc
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package riscv_package
+# -- Compiling entity tb_riscv
+# -- Compiling architecture tb of tb_riscv
+# vsim work.TB_RISCV 
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading /software/mentor/modelsim_6.2g/linux/../std.standard
 # Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
 # Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
 # Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
 # Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
 # Loading work.riscv_package
-# Loading work.tb_cu(test)#1
+# Loading work.tb_riscv(tb)#1
+# Loading work.risc(structural)#1
+# Loading work.fetch(struct)#1
+# Loading work.mux2to1(behavioral)#1
+# Loading work.reg(regsynch)#1
+# Loading work.csa(struct)#1
+# Loading work.rca(struct)
+# Loading work.fa(struct)
+# Loading work.mux2to1(behavioral)#2
+# Loading work.mux2to1(behavioral)#3
 # Loading work.cu(cu_hw)#1
+# Loading work.decode(struct)
+# Loading work.regfile_behav(behavioral)
+# Loading work.imm_gen(behavioral)
+# Loading work.reg(regsynch)#2
+# Loading work.execute(struct)#1
+# Loading work.alu(behavior)#1
+# Loading work.reg_1(regsynch)
+# Loading work.mux4to1(behavioral)#1
+source sim_script.txt
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package riscv_package
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity fa
+# -- Compiling architecture struct of fa
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity mux2to1
+# -- Compiling architecture behavioral of mux2to1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity mux4to1
+# -- Compiling architecture behavioral of mux4to1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity reg
+# -- Compiling architecture regsynch of reg
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity reg_1
+# -- Compiling architecture regsynch of reg_1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity imm_gen
+# -- Compiling architecture behavioral of imm_gen
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity rca
+# -- Compiling architecture struct of rca
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity csa
+# -- Compiling architecture struct of csa
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity alu
+# -- Compiling architecture behavior of alu
+# -- Compiling configuration cfg_alu_behavioral
+# -- Loading entity alu
+# -- Loading architecture behavior of alu
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity regfile_behav
+# -- Compiling architecture behavioral of regfile_behav
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity fetch
+# -- Compiling architecture struct of fetch
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity decode
+# -- Compiling architecture struct of decode
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity execute
+# -- Compiling architecture struct of execute
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity cu
+# -- Compiling architecture cu_hw of cu
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity risc
+# -- Compiling architecture structural of risc
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package riscv_package
+# -- Compiling entity tb_riscv
+# -- Compiling architecture tb of tb_riscv
+# vsim work.TB_RISCV 
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading work.riscv_package
+# Loading work.tb_riscv(tb)#1
+# Loading work.risc(structural)#1
+# Loading work.fetch(struct)#1
+# Loading work.mux2to1(behavioral)#1
+# Loading work.reg(regsynch)#1
+# Loading work.csa(struct)#1
+# Loading work.rca(struct)
+# Loading work.fa(struct)
+# Loading work.mux2to1(behavioral)#2
+# Loading work.mux2to1(behavioral)#3
+# Loading work.cu(cu_hw)#1
+# Loading work.decode(struct)
+# Loading work.regfile_behav(behavioral)
+# Loading work.imm_gen(behavioral)
+# Loading work.reg(regsynch)#2
+# Loading work.execute(struct)#1
+# Loading work.alu(behavior)#1
+# Loading work.reg_1(regsynch)
+# Loading work.mux4to1(behavioral)#1
 add waves *
-add wave sim:/tb_cu/cu_instance/cw
-add wave sim:/tb_cu/cu_instance/cw
-add wave sim:/tb_cu/cu_instance/aluopcode_i
-add wave sim:/tb_cu/cu_instance/aluopcode1
-add wave sim:/tb_cu/cu_instance/aluopcode2
-add wave sim:/tb_cu/cu_instance/aluopcode3
-run 1 ms
+run 500ns
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ns  Iteration: 0  Instance: /tb_cu/cu_instance
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv/risc_v/dp_cu
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 50 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 50 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 110 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 110 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 130 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 130 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 150 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 150 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 170 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 170 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 190 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 190 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 210 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 210 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 230 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 230 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 250 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 250 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 270 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 270 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 290 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 290 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 310 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 310 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 330 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 330 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 350 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 350 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 370 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 370 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 390 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 390 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 410 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 410 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 430 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 430 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 450 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 450 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 470 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 470 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 490 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 490 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+add waves *
+source sim_script.txt
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package riscv_package
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity fa
+# -- Compiling architecture struct of fa
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity mux2to1
+# -- Compiling architecture behavioral of mux2to1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity mux4to1
+# -- Compiling architecture behavioral of mux4to1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity reg
+# -- Compiling architecture regsynch of reg
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity reg_1
+# -- Compiling architecture regsynch of reg_1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity imm_gen
+# -- Compiling architecture behavioral of imm_gen
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity rca
+# -- Compiling architecture struct of rca
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity csa
+# -- Compiling architecture struct of csa
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity alu
+# -- Compiling architecture behavior of alu
+# -- Compiling configuration cfg_alu_behavioral
+# -- Loading entity alu
+# -- Loading architecture behavior of alu
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity regfile_behav
+# -- Compiling architecture behavioral of regfile_behav
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity fetch
+# -- Compiling architecture struct of fetch
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity decode
+# -- Compiling architecture struct of decode
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity execute
+# -- Compiling architecture struct of execute
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity cu
+# -- Compiling architecture cu_hw of cu
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity risc
+# -- Compiling architecture structural of risc
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package riscv_package
+# -- Compiling entity tb_riscv
+# -- Compiling architecture tb of tb_riscv
+# vsim work.TB_RISCV 
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading work.riscv_package
+# Loading work.tb_riscv(tb)#1
+# Loading work.risc(structural)#1
+# Loading work.fetch(struct)#1
+# Loading work.mux2to1(behavioral)#1
+# Loading work.reg(regsynch)#1
+# Loading work.csa(struct)#1
+# Loading work.rca(struct)
+# Loading work.fa(struct)
+# Loading work.mux2to1(behavioral)#2
+# Loading work.mux2to1(behavioral)#3
+# Loading work.cu(cu_hw)#1
+# Loading work.decode(struct)
+# Loading work.regfile_behav(behavioral)
+# Loading work.imm_gen(behavioral)
+# Loading work.reg(regsynch)#2
+# Loading work.execute(struct)#1
+# Loading work.alu(behavior)#1
+# Loading work.reg_1(regsynch)
+# Loading work.mux4to1(behavioral)#1
+add waves *
+run 500ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv/risc_v/dp_cu
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 30 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 50 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 50 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 70 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 90 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 110 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 110 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 130 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 130 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 150 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 150 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 170 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 170 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 190 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 190 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 210 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 210 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 230 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 230 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 250 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 250 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 270 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 270 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 290 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 290 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 310 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 310 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 330 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 330 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 350 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 350 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 370 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 370 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 390 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 390 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 410 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 410 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 430 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 430 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 450 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 450 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 470 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 470 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 490 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 490 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+source sim_script.txt
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package riscv_package
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity fa
+# -- Compiling architecture struct of fa
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity mux2to1
+# -- Compiling architecture behavioral of mux2to1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity mux4to1
+# -- Compiling architecture behavioral of mux4to1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity reg
+# -- Compiling architecture regsynch of reg
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity reg_1
+# -- Compiling architecture regsynch of reg_1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity imm_gen
+# -- Compiling architecture behavioral of imm_gen
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity rca
+# -- Compiling architecture struct of rca
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity csa
+# -- Compiling architecture struct of csa
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity alu
+# -- Compiling architecture behavior of alu
+# -- Compiling configuration cfg_alu_behavioral
+# -- Loading entity alu
+# -- Loading architecture behavior of alu
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity regfile_behav
+# -- Compiling architecture behavioral of regfile_behav
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity fetch
+# -- Compiling architecture struct of fetch
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity decode
+# -- Compiling architecture struct of decode
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity execute
+# -- Compiling architecture struct of execute
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity cu
+# -- Compiling architecture cu_hw of cu
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity risc
+# -- Compiling architecture structural of risc
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package riscv_package
+# -- Compiling entity tb_riscv
+# -- Compiling architecture tb of tb_riscv
+# ** Error: ../tb/tb_RISCV.vhd(31): Integer literal 0 is not of type ieee.std_logic_1164.std_logic_vector.
+# ** Error: ../tb/tb_RISCV.vhd(33): near "data_mem": expecting: BEGIN
+# ** Error: ../tb/tb_RISCV.vhd(156): near "process": expecting: ';'
+# /software/mentor/modelsim_6.2g/linux/vcom failed.
+source sim_script.txt
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package riscv_package
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity fa
+# -- Compiling architecture struct of fa
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity mux2to1
+# -- Compiling architecture behavioral of mux2to1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity mux4to1
+# -- Compiling architecture behavioral of mux4to1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity reg
+# -- Compiling architecture regsynch of reg
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity reg_1
+# -- Compiling architecture regsynch of reg_1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity imm_gen
+# -- Compiling architecture behavioral of imm_gen
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity rca
+# -- Compiling architecture struct of rca
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity csa
+# -- Compiling architecture struct of csa
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity alu
+# -- Compiling architecture behavior of alu
+# -- Compiling configuration cfg_alu_behavioral
+# -- Loading entity alu
+# -- Loading architecture behavior of alu
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity regfile_behav
+# -- Compiling architecture behavioral of regfile_behav
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity fetch
+# -- Compiling architecture struct of fetch
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity decode
+# -- Compiling architecture struct of decode
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity execute
+# -- Compiling architecture struct of execute
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity cu
+# -- Compiling architecture cu_hw of cu
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity risc
+# -- Compiling architecture structural of risc
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package riscv_package
+# -- Compiling entity tb_riscv
+# -- Compiling architecture tb of tb_riscv
+# ** Error: ../tb/tb_RISCV.vhd(33): near "data_mem": expecting: BEGIN
+# ** Error: ../tb/tb_RISCV.vhd(156): near "process": expecting: ';'
+# /software/mentor/modelsim_6.2g/linux/vcom failed.
+source sim_script.txt
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package riscv_package
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity fa
+# -- Compiling architecture struct of fa
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity mux2to1
+# -- Compiling architecture behavioral of mux2to1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity mux4to1
+# -- Compiling architecture behavioral of mux4to1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity reg
+# -- Compiling architecture regsynch of reg
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity reg_1
+# -- Compiling architecture regsynch of reg_1
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity imm_gen
+# -- Compiling architecture behavioral of imm_gen
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity rca
+# -- Compiling architecture struct of rca
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity csa
+# -- Compiling architecture struct of csa
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity alu
+# -- Compiling architecture behavior of alu
+# -- Compiling configuration cfg_alu_behavioral
+# -- Loading entity alu
+# -- Loading architecture behavior of alu
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity regfile_behav
+# -- Compiling architecture behavioral of regfile_behav
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity fetch
+# -- Compiling architecture struct of fetch
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity decode
+# -- Compiling architecture struct of decode
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity execute
+# -- Compiling architecture struct of execute
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity cu
+# -- Compiling architecture cu_hw of cu
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package riscv_package
+# -- Compiling entity risc
+# -- Compiling architecture structural of risc
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Loading package riscv_package
+# -- Compiling entity tb_riscv
+# -- Compiling architecture tb of tb_riscv
+# vsim work.TB_RISCV 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading work.riscv_package
+# Loading work.tb_riscv(tb)#1
+# Loading work.risc(structural)#1
+# Loading work.fetch(struct)#1
+# Loading work.mux2to1(behavioral)#1
+# Loading work.reg(regsynch)#1
+# Loading work.csa(struct)#1
+# Loading work.rca(struct)
+# Loading work.fa(struct)
+# Loading work.mux2to1(behavioral)#2
+# Loading work.mux2to1(behavioral)#3
+# Loading work.cu(cu_hw)#1
+# Loading work.decode(struct)
+# Loading work.regfile_behav(behavioral)
+# Loading work.imm_gen(behavioral)
+# Loading work.reg(regsynch)#2
+# Loading work.execute(struct)#1
+# Loading work.alu(behavior)#1
+# Loading work.reg_1(regsynch)
+# Loading work.mux4to1(behavioral)#1
+add waves *
+run 500 ns
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv/risc_v/dp_cu
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 10 ns  Iteration: 1  Instance: /tb_riscv/risc_v/dp_decode/register_file

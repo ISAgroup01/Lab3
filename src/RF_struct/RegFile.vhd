@@ -30,7 +30,7 @@ architecture STRUCTURAL of RegFile is
           REG_OUT   :   OUT std_logic_vector (31 downto 0));
   end component;
 
-  component mux32_generic is
+  component mux32to1 is
 
     generic (n : integer := 32);
     Port(
