@@ -1,0 +1,186 @@
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/gtech.db'
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ../src/RISC.vhd:132: The initial value for signal 'PC_IF' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  ../src/RISC.vhd:132: The initial value for signal 'branch_PC' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  ../src/RISC.vhd:132: The initial value for signal 'jal_if' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'RISC'.
+Information: Building the design 'FETCH'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'REG' instantiated from design 'RISC' with
+	the parameters "N=32". (HDL-193)
+
+Inferred memory devices in process
+	in routine REG_N32 line 17 in file
+		'../src/reg.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     REG_OUT_reg     | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'CU'. (HDL-193)
+Warning:  ../src/CU.vhd:61: The initial value for signal 'cw_mem' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  ../src/CU.vhd:91: The initial value for signal 'aluOpcode_i' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  ../src/CU.vhd:92: The initial value for signal 'aluOpcode1' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+
+Statistics for case statements in always block at line 174 in file
+	'../src/CU.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           176            |    auto/auto     |
+|           179            |    auto/auto     |
+|           188            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine CU line 141 in file
+		'../src/CU.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   aluOpcode1_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       cw3_reg       | Flip-flop |  15   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       cw4_reg       | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       cw5_reg       | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|      CU/138      |   16   |    1    |      4       |
+======================================================
+Presto compilation completed successfully.
+Information: Building the design 'DECODE'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'REG' instantiated from design 'RISC' with
+	the parameters "N=5". (HDL-193)
+
+Inferred memory devices in process
+	in routine REG_N5 line 17 in file
+		'../src/reg.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     REG_OUT_reg     | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'EXECUTE'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'REG_1'. (HDL-193)
+
+Inferred memory devices in process
+	in routine REG_1 line 17 in file
+		'../src/reg_1.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     REG_OUT_reg     | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'mux4to1' instantiated from design 'RISC' with
+	the parameters "N=32". (HDL-193)
+Warning:  ../src/mux4to1.vhd:18: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 18 in file
+	'../src/mux4to1.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            18            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'mux2to1' instantiated from design 'FETCH' with
+	the parameters "N=32". (HDL-193)
+Warning:  ../src/mux2to1.vhd:16: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 16 in file
+	'../src/mux2to1.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            16            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'CSA'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'RegFile_behav'. (HDL-193)
+Warning:  ../src/RegFile_behav.vhd:26: The initial value for signal 'REGISTERS' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+
+Inferred memory devices in process
+	in routine RegFile_behav line 30 in file
+		'../src/RegFile_behav.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    ReadData1_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    ReadData2_reg    | Flip-flop |  32   |  Y  | N  | N  | N  | N  | N  | N  |
+|    REGISTERS_reg    | Flip-flop | 1024  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+| RegFile_behav/42 |   32   |   32    |      5       |
+| RegFile_behav/43 |   32   |   32    |      5       |
+======================================================
+Presto compilation completed successfully.
+Information: Building the design 'Imm_gen'. (HDL-193)
+
+Statistics for case statements in always block at line 41 in file
+	'../src/Immediate_gen.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            43            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'ALU' instantiated from design 'EXECUTE' with
+	the parameters "N=32". (HDL-193)
+Warning:  ../src/ALU.vhd:16: The initial value for signal 'true_value' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  ../src/ALU.vhd:17: The initial value for signal 'false_value' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Warning:  ../src/ALU.vhd:20: Initial values for signals/variables are not supported for synthesis by default. They are ignored. (VHD-7)
+
+Statistics for case statements in always block at line 20 in file
+	'../src/ALU.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            29            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'RCA'. (HDL-193)
+Warning:  ../src/RCA_8bit.vhd:23: The initial value for signal 'c' is not supported for synthesis. Presto ignores it.  (ELAB-130)
+Presto compilation completed successfully.
+Information: Building the design 'mux2to1' instantiated from design 'CSA' with
+	the parameters "N=9". (HDL-193)
+Warning:  ../src/mux2to1.vhd:16: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 16 in file
+	'../src/mux2to1.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            16            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'mux2to1' instantiated from design 'CSA' with
+	the parameters "N=17". (HDL-193)
+Warning:  ../src/mux2to1.vhd:16: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 16 in file
+	'../src/mux2to1.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            16            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'FA'. (HDL-193)
+Presto compilation completed successfully.
+1

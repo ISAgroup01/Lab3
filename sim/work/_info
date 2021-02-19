@@ -3,20 +3,14 @@ m255
 cModel Technology
 d/home/isa01/Desktop/Lab3/Lab3/sim
 T_opt
-V4NH^Aab:ZlK=Nm]8DX=[z0
-06 5 4 ./work tb_cu test 1
-o-quiet -auto_acc_if_foreign -work work
-tExplicit 1
-OE;O;6.2g;35
-T_opt1
-V73cAIzJPdLC8Qh9QI:bY10
+V^_Z:27[Tl8VoWRni?7ZJf0
 06 8 2 ./work tb_riscv tb 1
 o-quiet -auto_acc_if_foreign -work work
 tExplicit 1
 OE;O;6.2g;35
 Ealu
-w1613158533
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+w1613772377
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/ALU.vhd
@@ -29,13 +23,13 @@ OE;C;6.2g;35
 o-93 -work ./work
 tExplicit 1
 Abehavior
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work alu F3D8lg?JFjTV;ii8oQSam3
 l18
 L14
-VZz2WX@@Y<P@Gk@DIR5oF<3
+Vd0XO<^IlbA4ki];Vicb040
 OE;C;6.2g;35
 31
 M3 ieee std_logic_1164
@@ -46,16 +40,16 @@ tExplicit 1
 Ccfg_alu_behavioral
 abehavior
 ealu
-DA work alu behavior Zz2WX@@Y<P@Gk@DIR5oF<3
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+DA work alu behavior d0XO<^IlbA4ki];Vicb040
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work alu F3D8lg?JFjTV;ii8oQSam3
-w1613158533
+w1613772377
 8../src/ALU.vhd
 F../src/ALU.vhd
 l0
-L47
+L96
 V]ZPRT8X>WmP:6KPA=]:L;0
 OE;C;6.2g;35
 31
@@ -65,8 +59,8 @@ M1 work riscv_package
 o-93 -work ./work
 tExplicit 1
 Ecsa
-w1613158535
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+w1613753039
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/CSA_32bit.vhd
@@ -79,7 +73,7 @@ OE;C;6.2g;35
 o-93 -work ./work
 tExplicit 1
 Astruct
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work csa 4>RF;fE[DD]LMZf[T[kEH2
@@ -94,31 +88,31 @@ M1 work riscv_package
 o-93 -work ./work
 tExplicit 1
 Ecu
-w1613158104
+w1613766064
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/CU.vhd
 F../src/CU.vhd
 l0
-L7
-VJa3hUX_[XO61;6n`4KVl43
+L8
+VPenXI`dYXW8a`1;XjJLGU0
 OE;C;6.2g;35
 31
 o-93 -work ./work
 tExplicit 1
 Acu_hw
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-DE work cu Ja3hUX_[XO61;6n`4KVl43
+DE work cu PenXI`dYXW8a`1;XjJLGU0
 l96
-L57
-VZWN6K3308mk4zSP:0F9j=3
+L59
+Va=SMPVgMZljfn]=?VCkmz1
 OE;C;6.2g;35
 31
 M5 ieee std_logic_1164
@@ -129,8 +123,8 @@ M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Edecode
-w1613158549
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+w1613753039
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/DP2_decode.vhd
@@ -143,7 +137,7 @@ OE;C;6.2g;35
 o-93 -work ./work
 tExplicit 1
 Astruct
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work decode _iPe92_6cPW<AN`1bD<Wh3
@@ -158,8 +152,8 @@ M1 work riscv_package
 o-93 -work ./work
 tExplicit 1
 Eexecute
-w1613158555
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+w1613768605
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/DP3_execute.vhd
@@ -172,7 +166,7 @@ OE;C;6.2g;35
 o-93 -work ./work
 tExplicit 1
 Astruct
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work execute zgIb`2cNOLQcI[JHZ4jlX3
@@ -187,8 +181,8 @@ M1 work riscv_package
 o-93 -work ./work
 tExplicit 1
 Efa
-w1613158559
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+w1613753039
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/FA.vhd
@@ -201,7 +195,7 @@ OE;C;6.2g;35
 o-93 -work ./work
 tExplicit 1
 Astruct
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work fa e?[djdGg=d80@7<i]55jm0
@@ -216,8 +210,8 @@ M1 work riscv_package
 o-93 -work ./work
 tExplicit 1
 Efetch
-w1613158538
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+w1613753039
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/DP1_fetch.vhd
@@ -230,7 +224,7 @@ OE;C;6.2g;35
 o-93 -work ./work
 tExplicit 1
 Astruct
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work fetch >Fm4h<K;VcBT1la@MaIb[3
@@ -245,8 +239,8 @@ M1 work riscv_package
 o-93 -work ./work
 tExplicit 1
 Eimm_gen
-w1613158563
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+w1613753039
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/Immediate_gen.vhd
@@ -259,13 +253,13 @@ OE;C;6.2g;35
 o-93 -work ./work
 tExplicit 1
 Abehavioral
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work imm_gen B>8IKm<JRgS46@lIfbDET2
 l19
 L12
-V?2^[<3=UbOnP_Sdj6GFnO2
+Vl4O^4Rf<gBSD08zmmk9J32
 OE;C;6.2g;35
 31
 M3 ieee std_logic_1164
@@ -274,7 +268,7 @@ M1 work riscv_package
 o-93 -work ./work
 tExplicit 1
 Emux2to1
-w1613158567
+w1613753039
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/mux2to1.vhd
@@ -300,7 +294,7 @@ M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Emux4to1
-w1613158575
+w1613753039
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/mux4to1.vhd
@@ -326,8 +320,8 @@ M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Erca
-w1613158576
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+w1613753039
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/RCA_8bit.vhd
@@ -340,7 +334,7 @@ OE;C;6.2g;35
 o-93 -work ./work
 tExplicit 1
 Astruct
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work rca [fHoTPJ_e^V[?jgQD;18P0
@@ -355,8 +349,8 @@ M1 work riscv_package
 o-93 -work ./work
 tExplicit 1
 Ereg
-w1613158577
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+w1613753039
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/reg.vhd
@@ -369,7 +363,7 @@ OE;C;6.2g;35
 o-93 -work ./work
 tExplicit 1
 Aregsynch
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work reg lz2ngWYhNmd0la;696``;3
@@ -384,8 +378,8 @@ M1 work riscv_package
 o-93 -work ./work
 tExplicit 1
 Ereg_1
-w1613158577
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+w1613753039
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 8../src/reg_1.vhd
@@ -398,7 +392,7 @@ OE;C;6.2g;35
 o-93 -work ./work
 tExplicit 1
 Aregsynch
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work reg_1 ^1mik;OeDCzeBQTnQWbO>3
@@ -413,7 +407,7 @@ M1 work riscv_package
 o-93 -work ./work
 tExplicit 1
 Eregfile_behav
-w1613158578
+w1613753040
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
@@ -435,7 +429,7 @@ DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work regfile_behav 9g<YT2]15?fWNJ>L]b]BB0
 l28
 L21
-VO^eV[3m4l`:ET9@6S7P_m2
+VT^dHfL]hK?ZPm^8mEMkg60
 OE;C;6.2g;35
 31
 M4 ieee std_logic_1164
@@ -445,27 +439,27 @@ M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
 Erisc
-w1613158589
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+w1613768635
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-8../src/RISCV_top_entity.vhd
-F../src/RISCV_top_entity.vhd
+8../src/RISC.vhd
+F../src/RISC.vhd
 l0
 L7
-VH^KJXR06JDTA19AjckcGD0
+VE4CHc6Cc`O[z9iTdLB0o^1
 OE;C;6.2g;35
 31
 o-93 -work ./work
 tExplicit 1
 Astructural
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-DE work risc H^KJXR06JDTA19AjckcGD0
-l157
-L19
-V4:`I:RORBOo]:C9EBV4Fe2
+DE work risc E4CHc6Cc`O[z9iTdLB0o^1
+l164
+L20
+V;5<Ob3G2KRWjBnGF>VnU80
 OE;C;6.2g;35
 31
 M3 ieee std_logic_1164
@@ -476,56 +470,21 @@ tExplicit 1
 Priscv_package
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-w1613158588
+w1613753041
 8../src/RISCV_package.vhd
 F../src/RISCV_package.vhd
 l0
 L5
-VX4]L0AY;F2PTfHaPAbCQ31
+VGIc3mgAf8YOh2KE`3fRgV3
 OE;C;6.2g;35
 31
 M2 ieee std_logic_1164
 M1 ieee numeric_std
 o-93 -work ./work
 tExplicit 1
-Etb_cu
-w1613156234
-DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
-DP work riscv_package HeD59l[zaLV<ngU_5XFbK0
-DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
-DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
-DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-8../tb/tb_CU.vhd
-F../tb/tb_CU.vhd
-l0
-L7
-VanglgB@JOOZ76Bg2^0EhP2
-OE;C;6.2g;35
-31
-o-93 -work ./work
-tExplicit 1
-Atest
-DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
-DP work riscv_package HeD59l[zaLV<ngU_5XFbK0
-DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
-DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
-DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-DE work tb_cu anglgB@JOOZ76Bg2^0EhP2
-l68
-L9
-VUP@TFzRDDO3So<aJXg94`2
-OE;C;6.2g;35
-31
-M5 ieee std_logic_1164
-M4 ieee std_logic_unsigned
-M3 ieee std_logic_arith
-M2 work riscv_package
-M1 ieee numeric_std
-o-93 -work ./work
-tExplicit 1
 Etb_riscv
-w1613169295
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+w1613753066
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
 DP std textio K]Z^fghZ6B=BjnK5NomDT3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
@@ -542,7 +501,7 @@ OE;C;6.2g;35
 o-93 -work ./work
 tExplicit 1
 Atb
-DP work riscv_package X4]L0AY;F2PTfHaPAbCQ31
+DP work riscv_package GIc3mgAf8YOh2KE`3fRgV3
 DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
 DP std textio K]Z^fghZ6B=BjnK5NomDT3
 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
@@ -550,9 +509,9 @@ DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
 DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
 DE work tb_riscv 0a=zne5RF<mE^lmKAeUTA2
-l119
-L12
-V[3EfJjWn;LKM2@M5@;n;H0
+l192
+L13
+VVdPGDil:lQJf0j]TZ]UC22
 OE;C;6.2g;35
 31
 M7 ieee std_logic_1164
@@ -561,41 +520,6 @@ M5 ieee std_logic_arith
 M4 ieee numeric_std
 M3 std textio
 M2 ieee std_logic_textio
-M1 work riscv_package
-o-93 -work ./work
-tExplicit 1
-Etbalu
-w1613147825
-DP work riscv_package HeD59l[zaLV<ngU_5XFbK0
-DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
-DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
-DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
-DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-8../tb/tb_alu.vhd
-F../tb/tb_alu.vhd
-l0
-L8
-VA`]8n6[mdOCzCg]b:4O181
-OE;C;6.2g;35
-31
-o-93 -work ./work
-tExplicit 1
-Atest
-DP work riscv_package HeD59l[zaLV<ngU_5XFbK0
-DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
-DP ieee std_logic_arith GJbAT?7@hRQU9IQ702DT]2
-DP ieee std_logic_unsigned hEMVMlaNCR^<OOoVNV;m90
-DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
-DE work tbalu A`]8n6[mdOCzCg]b:4O181
-l27
-L11
-V7GjLL8453TjD`WA=9zLBn3
-OE;C;6.2g;35
-31
-M5 ieee std_logic_1164
-M4 ieee std_logic_unsigned
-M3 ieee std_logic_arith
-M2 ieee numeric_std
 M1 work riscv_package
 o-93 -work ./work
 tExplicit 1

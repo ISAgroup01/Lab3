@@ -19,45 +19,76 @@ begin
 
 P_ALU: process (FUNC, DATA1, DATA2)
  
-  variable var_ABS_conv: std_logic_vector(nb-1 downto 0);
+  variable var_ABS_conv: std_logic_vector(nb-1 downto 0) := (others => '0');
+
   begin
+
+  OUTALU <= (others => '0');
+  FLAG0 <= '0';
+    
     case FUNC is
-	      when ADD      => OUTALU <= std_logic_vector(signed(DATA1) + signed(DATA2)) ; 
+      
+	when ADD      => OUTALU <= std_logic_vector(signed(DATA1) + signed(DATA2)) ;
+                         FLAG0 <= '0';
+                         
         when EXOR     => OUTALU <= DATA1 xor DATA2;
+                         FLAG0 <= '0';
+                         
         when SLT      => if to_integer(signed(DATA1) - signed(DATA2)) < 0 then
                            OUTALU <= true_value;
+                           FLAG0 <= '0';
                          else
                            OUTALU <= false_value;
-                         end if;
-        when ADDI     => OUTALU <= std_logic_vector(signed(DATA1) + signed(DATA2));
-        when SRAI     => OUTALU <= std_logic_vector(shift_right(signed(DATA1), to_integer(signed(DATA2)))); -- arithmetic shift right
-        when ANDI     => OUTALU <= DATA1 and DATA2;
-        when LUI      => OUTALU <= DATA2;
-        when BEQ      => if DATA1 = DATA2  then
-                           FLAG0 <= '1';
-                         else
                            FLAG0 <= '0';
                          end if;
                          
+        when ADDI     => OUTALU <= std_logic_vector(signed(DATA1) + signed(DATA2));
+                         FLAG0 <= '0';
+                         
+        when SRAI     => OUTALU <= std_logic_vector(shift_right(signed(DATA1), to_integer(signed(DATA2)))); -- arithmetic shift right
+                         FLAG0 <= '0';
+                         
+        when ANDI     => OUTALU <= DATA1 and DATA2;
+                         FLAG0 <= '0';
+                         
+        when LUI      => OUTALU <= DATA2;
+                         FLAG0 <= '0';
+                         
+                        
+        when BEQ      => if DATA1 = DATA2  then
+                           FLAG0 <= '1';
+                           OUTALU <= (others => '0');
+                         else
+                           FLAG0 <= '0';
+                           OUTALU <= (others => '0');
+                         end if;
+                         
        when LW => OUTALU <= std_logic_vector(signed(DATA1) + signed(DATA2));
+                  FLAG0 <= '0';
+                  
        when SW => OUTALU <= std_logic_vector(signed(DATA1) + signed(DATA2));
-     when JAL => FLAG0 <= '1';  
+                   FLAG0 <= '0';
+                  
+       when JAL => FLAG0 <= '1';
+                   OUTALU <= (others => '0');
      
-      when ABSV		=> 	--Absolute value
-									if (DATA1(N-1) = '1') then
+       when ABSV  => 	--Absolute value
+		  if (DATA1(N-1) = '1') then
 			
-										var_ABS_conv := std_logic_vector(unsigned(not(DATA1)) + 1);
-			
-										OUTALU <= std_logic_vector(var_ABS_conv);
+		     var_ABS_conv := std_logic_vector(unsigned(not(DATA1)) + 1);	
+		     OUTALU <= std_logic_vector(var_ABS_conv);
+                     FLAG0 <= '0';
 			 
-									else
+		   else
 			   
-										OUTALU <= DATA1;
+		     OUTALU <= DATA1;
+                     FLAG0 <= '0';
 			 
-									end if; --ABS_in
+		   end if; --ABS_in
 									       
 	when others => null;
-    end case; 
+    end case;
+    
   end process P_ALU;
 
 end BEHAVIOR;

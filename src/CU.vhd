@@ -179,8 +179,8 @@ begin  -- cu_rtl
 			case IR_func is
 				when "000" => aluOpcode_i <= ADD;
 				when "100" => aluOpcode_i <= EXOR;
-        when "010" => aluOpcode_i <= SLT;
-        when "011" => aluOpcode_i <= ABSV; --replacing the SLTU instr. of the RV32I
+                                when "010" => aluOpcode_i <= SLT;
+                                when "011" => aluOpcode_i <= ABSV; --replacing the SLTU instr. of the RV32I
 				when others => aluOpcode_i <= NOP;
 			end case;
                 -- I type
@@ -196,13 +196,13 @@ begin  -- cu_rtl
                 -- LW
 		when "0000011" => aluOpcode_i <= LW; 
                 -- SW
-    when "0100011" => aluOpcode_i <= SW;
+                when "0100011" => aluOpcode_i <= SW;
                 -- JAL
-    when "1101111" => aluOpcode_i <= JAL;
+                when "1101111" => aluOpcode_i <= JAL;
                 -- AUIPC
-    --when "0010111" => aluOpcode_i <= AUIPC;
+                --when "0010111" => aluOpcode_i <= AUIPC;
                 -- LUI
-    when "0110111" => aluOpcode_i <= LUI;
+                when "0110111" => aluOpcode_i <= LUI;
                                   
 		when others => aluOpcode_i <= NOP;
 	 end case;
