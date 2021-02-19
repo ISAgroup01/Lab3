@@ -71,10 +71,11 @@ begin
 		-- U-type
       when "0010111" => --AUIPC
 			ext_u <= (others => '0');
-			IMM_OUT <= IMM_IN(31 downto 12) & ext_u;
+			IMM_OUT <= IMM_IN(31 downto 12) & "000000000000";
+
       when "0110111" => --LUI
 			ext_u <= (others => '0');
-			IMM_OUT <= IMM_IN(31 downto 12) & ext_u;
+			IMM_OUT <= IMM_IN(31 downto 12) & "000000000000";
 		
 		when others =>
 			IMM_OUT <= (others => '0');

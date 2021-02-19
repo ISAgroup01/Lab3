@@ -23,7 +23,7 @@ architecture behavioral of RegFile_behav is
         -- suggested structures
   subtype REG_ADDR is natural range 0 to ((2**5)-1); -- using natural type
 	type REG_ARRAY is array(REG_ADDR) of std_logic_vector(31 downto 0);
-	signal REGISTERS : REG_ARRAY;
+	signal REGISTERS : REG_ARRAY := (others=> (others => '0'));
 
 begin
 

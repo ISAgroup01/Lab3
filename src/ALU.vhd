@@ -22,14 +22,14 @@ P_ALU: process (FUNC, DATA1, DATA2)
 
   begin
     case FUNC is
-	when ADD      => OUTALU <= std_logic_vector(signed(DATA1) + signed(DATA2)) ; 
+	      when ADD      => OUTALU <= std_logic_vector(signed(DATA1) + signed(DATA2)) ; 
         when EXOR     => OUTALU <= DATA1 xor DATA2;
         when SLT      => if to_integer(signed(DATA1) - signed(DATA2)) < 0 then
                            OUTALU <= true_value;
                          else
                            OUTALU <= false_value;
                          end if;
-        --when ADDI     => OUTALU <= std_logic_vector(signed(DATA1) + signed(DATA2));
+        when ADDI     => OUTALU <= std_logic_vector(signed(DATA1) + signed(DATA2));
         when SRAI     => OUTALU <= std_logic_vector(shift_right(signed(DATA1), to_integer(signed(DATA2)))); -- arithmetic shift right
         when ANDI     => OUTALU <= DATA1 and DATA2;
         when LUI      => OUTALU <= DATA2;
@@ -38,6 +38,9 @@ P_ALU: process (FUNC, DATA1, DATA2)
                          else
                            FLAG0 <= '0';
                          end if;
+                         
+       when LW => OUTALU <= std_logic_vector(signed(DATA1) + signed(DATA2));
+       when SW => OUTALU <= std_logic_vector(signed(DATA1) + signed(DATA2));          
 	when others => null;
     end case; 
   end process P_ALU;

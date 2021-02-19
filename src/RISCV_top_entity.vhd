@@ -12,6 +12,7 @@ entity RISC is
 		I_MEM_address : out std_logic_vector(nb-1 downto 0);
 		D_MEM_read    : in  std_logic_vector(nb-1 downto 0);
 		D_MEM_WE      : out std_logic;
+		D_MEM_RE      : out std_logic;
 		D_MEM_address : out std_logic_vector(nb-1 downto 0);
 		D_MEM_write   : out std_logic_vector(nb-1 downto 0));
 end entity;
@@ -82,7 +83,7 @@ component CU
     OP_CODE_SIZE       :     integer := 7;  -- Op Code Size
     ALU_OPC_SIZE       :     integer := 4;  -- ALU Op Code Word Size
     IR_SIZE            :     integer := 32;  -- Instruction Register Size    
-    CW_SIZE            :     integer := 21);  -- Control Word Size
+    CW_SIZE            :     integer := 20);  -- Control Word Size
   port (
     Clk                : in  std_logic;  -- Clock
     Rst                : in  std_logic;  -- Reset:Active-Low
@@ -108,11 +109,13 @@ component CU
     Reg_LATCH_EN         : out std_logic;
     EQ_COND              : out std_logic;
     RegD1_LATCH_EN       : out std_logic;
+    
     -- ALU Operation Code
     ALU_OPCODE         : out aluOp;--std_logic_vector(ALU_OPC_SIZE -1 downto 0);
     
     -- MEM Control Signals
     MEM_WE              : out std_logic;
+    MEM_RE              : out std_logic;
     DATA_MEM_LATCH_EN   : out std_logic;
     BYPASS_MEM_LATCH_EN : out std_logic;
     JUMP_EN             : out std_logic;
@@ -154,6 +157,9 @@ signal cu_regIMM_en, cu_rd_en, cu_pc_en, cu_mux_sel, cu_add_en, cu_ALU : std_log
 signal cu_reg_ex_en, cu_eq_cond, cu_rd1_en, cu_mem_we, cu_data_mem, cu_bypass, cu_jump_en, cu_rd2_en : std_logic;
 signal cu_wb1, cu_wb2, cu_rf_we : std_logic;
 signal cu_ALU_opcode : aluOp;
+
+signal cu_mem_re : std_logic;
+
 begin
 
 --Fetch-----------------------------------------------------------------------------------------------
@@ -174,10 +180,10 @@ begin
 	
 	--IF_ID_en <= '1';
 	REG_IFtoID1 : REG Generic Map(N => nb)
-							Port Map(REG_IN => PC_IF, REG_EN => cu_npc_en, REG_CLK => RISC_CLK,
+							Port Map(REG_IN => PC_IF, REG_EN => '1', REG_CLK => RISC_CLK,
 										REG_RESET => RISC_RST, REG_OUT => PC_ID);
 	REG_IFtoID2 : REG Generic Map(N => nb)
-							Port Map(REG_IN => I_MEM_read, REG_EN => cu_ir_en, REG_CLK => RISC_CLK,
+							Port Map(REG_IN => I_MEM_read, REG_EN => '1', REG_CLK => RISC_CLK,
 										REG_RESET => RISC_RST, REG_OUT => ID_instr);
 										
 	REG_IFtoID3 : REG Generic Map(N => nb)
@@ -186,8 +192,8 @@ begin
 --Decode---------------------------------------------------------------------------------------------
 
 	dp_CU : CU 
-			Generic Map(
-    MICROCODE_MEM_SIZE => 16, FUNC_SIZE => 3, OP_CODE_SIZE => 7, ALU_OPC_SIZE => 4, IR_SIZE => 32, CW_SIZE => 21)
+			--Generic Map(
+    --MICROCODE_MEM_SIZE => 16, FUNC_SIZE => 3, OP_CODE_SIZE => 7, ALU_OPC_SIZE => 4, IR_SIZE => 32, CW_SIZE => 21)
 			Port Map(
     Clk => RISC_CLK, Rst => RISC_RST,
     -- Instruction Register
@@ -211,7 +217,8 @@ begin
     -- ALU Operation Code
     ALU_OPCODE => cu_ALU_opcode,
     -- MEM Control Signals
-	 MEM_WE => cu_mem_we, 
+	 MEM_WE => cu_mem_we,
+	 MEM_RE => cu_mem_re,
     DATA_MEM_LATCH_EN => cu_data_mem, 
     BYPASS_MEM_LATCH_EN => cu_bypass, 
     JUMP_EN => cu_jump_en,
@@ -299,6 +306,8 @@ begin
 	D_MEM_address <= ALU_res_m;
 	D_MEM_write <= Reg_Data2_m; 
 	D_MEM_WE <= cu_mem_we;
+	D_MEM_RE <= cu_mem_re;
+	
 	
 	REG_MEMtoWB2 : REG Generic Map(N => nb)
 							 Port Map(REG_IN => D_MEM_read, REG_EN => cu_data_mem, REG_CLK => RISC_CLK, 
@@ -316,7 +325,8 @@ begin
 							 Port Map(REG_IN => jal_mem, REG_EN => cu_rd2_en, REG_CLK => RISC_CLK, 
 										 REG_RESET => RISC_RST, REG_OUT => jal_wb);										 
 --WB----------------------------------------------------------------------------------------------------------------------------------------
-	mux_sel_wb <= cu_wb2 & cu_wb1;
+	--mux_sel_wb <= cu_wb2 & cu_wb1;
+	mux_sel_wb <= "00";
 	mux_WB : mux4to1 Generic Map(N => nb)
 					     Port Map (A => ALU_res_wb, B => MemDataout_wb, C => jal_wb, D => auipc_data,
 										sel => mux_sel_wb, S => Reg_Write_data);
