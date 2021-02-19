@@ -77,22 +77,22 @@ component mux4to1
 		  S   :  OUT  std_logic_vector(N-1 downto 0));
 end component;
 component CU
-  generic (
-    MICROCODE_MEM_SIZE :     integer := 16;  -- Microcode Memory Size
-    FUNC_SIZE          :     integer := 3;  -- Func Field Size for R-Type Ops
-    OP_CODE_SIZE       :     integer := 7;  -- Op Code Size
-    ALU_OPC_SIZE       :     integer := 4;  -- ALU Op Code Word Size
-    IR_SIZE            :     integer := 32;  -- Instruction Register Size    
-    CW_SIZE            :     integer := 20);  -- Control Word Size
+  --generic (
+    --MICROCODE_MEM_SIZE :     integer := 16;  -- Microcode Memory Size
+    --FUNC_SIZE          :     integer := 3;  -- Func Field Size for R-Type Ops
+    --OP_CODE_SIZE       :     integer := 7;  -- Op Code Size
+    --ALU_OPC_SIZE       :     integer := 4;  -- ALU Op Code Word Size
+    --IR_SIZE            :     integer := 32;  -- Instruction Register Size    
+    --CW_SIZE            :     integer := 20);  -- Control Word Size
   port (
     Clk                : in  std_logic;  -- Clock
     Rst                : in  std_logic;  -- Reset:Active-Low
     -- Instruction Register
-    IR_IN              : in  std_logic_vector(IR_SIZE - 1 downto 0);
+    IR_IN              : in  std_logic_vector(31 downto 0);
     
     -- IF Control Signal
-    IR_LATCH_EN        : out std_logic;  -- Instruction Register Latch Enable
-    NPC_LATCH_EN       : out std_logic;
+    --IR_LATCH_EN        : out std_logic;  -- Instruction Register Latch Enable
+    --NPC_LATCH_EN       : out std_logic;
                                         -- NextProgramCounter Register Latch Enable
     -- ID Control Signals
     Reg1_LATCH_EN       : out std_logic;
@@ -152,7 +152,8 @@ signal MemDataout_wb, ALU_res_wb, Reg_Write_data, jal_wb : std_logic_vector(nb-1
 signal Reg_Write : std_logic_vector(nb_reg-1 downto 0);
 signal mux_sel_wb : std_logic_vector(1 downto 0);
 --CU signal
-signal cu_ir_en, cu_npc_en, cu_reg1_en, cu_reg2_en : std_logic;
+signal cu_reg1_en, cu_reg2_en : std_logic;
+--signal cu_ir_en, cu_npc_en;
 signal cu_regIMM_en, cu_rd_en, cu_pc_en, cu_mux_sel, cu_add_en, cu_ALU : std_logic;
 signal cu_reg_ex_en, cu_eq_cond, cu_rd1_en, cu_mem_we, cu_data_mem, cu_bypass, cu_jump_en, cu_rd2_en : std_logic;
 signal cu_wb1, cu_wb2, cu_rf_we : std_logic;
@@ -199,8 +200,8 @@ begin
     -- Instruction Register
     IR_IN => ID_instr,
     -- IF Control Signal
-    IR_LATCH_EN => cu_ir_en,
-    NPC_LATCH_EN => cu_npc_en,
+    --IR_LATCH_EN => cu_ir_en,
+    --NPC_LATCH_EN => cu_npc_en,
     -- ID Control Signals
     Reg1_LATCH_EN => cu_reg1_en,
     Reg2_LATCH_EN => cu_reg2_en,
@@ -325,8 +326,8 @@ begin
 							 Port Map(REG_IN => jal_mem, REG_EN => cu_rd2_en, REG_CLK => RISC_CLK, 
 										 REG_RESET => RISC_RST, REG_OUT => jal_wb);										 
 --WB----------------------------------------------------------------------------------------------------------------------------------------
-	--mux_sel_wb <= cu_wb2 & cu_wb1;
-	mux_sel_wb <= "00";
+	mux_sel_wb <= cu_wb1 & cu_wb2;
+	--mux_sel_wb <= "00";
 	mux_WB : mux4to1 Generic Map(N => nb)
 					     Port Map (A => ALU_res_wb, B => MemDataout_wb, C => jal_wb, D => auipc_data,
 										sel => mux_sel_wb, S => Reg_Write_data);

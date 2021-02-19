@@ -19,7 +19,7 @@ begin
 
 P_ALU: process (FUNC, DATA1, DATA2)
  
-
+  variable var_ABS_conv: std_logic_vector(nb-1 downto 0);
   begin
     case FUNC is
 	      when ADD      => OUTALU <= std_logic_vector(signed(DATA1) + signed(DATA2)) ; 
@@ -40,7 +40,22 @@ P_ALU: process (FUNC, DATA1, DATA2)
                          end if;
                          
        when LW => OUTALU <= std_logic_vector(signed(DATA1) + signed(DATA2));
-       when SW => OUTALU <= std_logic_vector(signed(DATA1) + signed(DATA2));          
+       when SW => OUTALU <= std_logic_vector(signed(DATA1) + signed(DATA2));
+     when JAL => FLAG0 <= '1';  
+     
+      when ABSV		=> 	--Absolute value
+									if (DATA1(N-1) = '1') then
+			
+										var_ABS_conv := std_logic_vector(unsigned(not(DATA1)) + 1);
+			
+										OUTALU <= std_logic_vector(var_ABS_conv);
+			 
+									else
+			   
+										OUTALU <= DATA1;
+			 
+									end if; --ABS_in
+									       
 	when others => null;
     end case; 
   end process P_ALU;

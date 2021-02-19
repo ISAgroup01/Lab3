@@ -20,8 +20,8 @@ entity CU is
     IR_IN              : in  std_logic_vector(31 downto 0);
     
     -- IF Control Signal
-    IR_LATCH_EN        : out std_logic;  -- Instruction Register Latch Enable
-    NPC_LATCH_EN       : out std_logic;
+    --IR_LATCH_EN        : out std_logic;  -- Instruction Register Latch Enable
+    --NPC_LATCH_EN       : out std_logic;
                                         -- NextProgramCounter Register Latch Enable
     -- ID Control Signals
     Reg1_LATCH_EN       : out std_logic;
@@ -58,7 +58,7 @@ end CU;
 
 architecture CU_HW of CU is
   type mem_array is array (integer range 0 to 15) of std_logic_vector(19 downto 0);
-  signal cw_mem : mem_array := ("10111101001011001111", -- LW
+  signal cw_mem : mem_array := ("10111101001011001011", -- LW
                                 "00100000000000000000",  
                                 "10111101001000101001", -- I-type  
                                 "00111010001000001111", -- AUIPC
@@ -71,35 +71,18 @@ architecture CU_HW of CU is
                                 "00000000000000000000",
                                 "00000000000000000000", 
                                 "11110010010000010000", -- BEQ
-                                "00111010001000011101", -- JAL
+                                "00111010011000011101", -- JAL
                                 "00000000000000000000",
                                 "00000000000000000000");
-                                
-     -- signal cw_mem : mem_array := ("111011110100101001111", -- LW
-                            --    "000010000000000000000",  
-                              --  "111011110100100101001", -- I-type  
-                             --   "110011101000100001111", -- AUIPC
-                              --  "111111010110010000000", -- SW
-                              --  "000000000000000000000",
-                              --  "111110100100100101001", -- R-type
-                               -- "110011110100100101001", -- LUI
-                               -- "000000000000000000000",
-                               -- "000000000000000000000",
-                               -- "000000000000000000000",
-                               -- "000000000000000000000", 
-                               -- "111111001001000010000", -- BEQ
-                              --  "110011101000100011101", -- JAL
-                               -- "000000000000000000000",
-                               -- "000000000000000000000");
-                                
-                                                              
+                          
+                                                        
   signal IR_opcode : std_logic_vector(6 downto 0);  -- OpCode part of IR
   signal IR_func : std_logic_vector(2 downto 0);   -- Func part of IR
-  signal cw   : std_logic_vector(19 downto 0); -- full control word read from cw_mem
+  --signal cw   : std_logic_vector(19 downto 0); -- full control word read from cw_mem
 
 
   -- control word is shifted to the correct stage
-  signal cw1 : std_logic_vector(19 downto 0); -- first stage
+  --signal cw1 : std_logic_vector(19 downto 0); -- first stage
   signal cw2 : std_logic_vector(19 downto 0); -- second stage
   signal cw3 : std_logic_vector(14 downto 0); -- third stage
   signal cw4 : std_logic_vector(8 downto 0); -- fourth stage
@@ -107,8 +90,8 @@ architecture CU_HW of CU is
 
   signal aluOpcode_i: aluOp := NOP; --NOP defined in package
   signal aluOpcode1: aluOp := NOP;
- signal aluOpcode2: aluOp := NOP;
-signal aluOpcode3: aluOp := NOP;
+ --signal aluOpcode2: aluOp := NOP;
+ --signal aluOpcode3: aluOp := NOP;
  
 begin  -- cu_rtl
 
@@ -119,7 +102,7 @@ begin  -- cu_rtl
   -- them univocally
   --cw <= cw_mem(to_integer(unsigned'(IR_opcode(6 downto 4) & IR_opcode(2))));
   --cw <= cw_mem(to_integer(unsigned'(IR_opcode(6) & IR_opcode(5) & IR_opcode(4) & IR_opcode(2))));
-  cw2 <= cw_mem(to_integer(unsigned'(IR_opcode(6) & IR_opcode(5) & IR_opcode(4) & IR_opcode(2))));
+  --cw2 <= cw_mem(to_integer(unsigned'(IR_opcode(6) & IR_opcode(5) & IR_opcode(4) & IR_opcode(2))));
 
   -- stage one control signals
   --IR_LATCH_EN  <= cw1(CW_SIZE - 1);
@@ -151,22 +134,26 @@ begin  -- cu_rtl
   WB_MUX_SEL1 <= cw5(2);
   WB_MUX_SEL2 <= cw5(1);
   RF_WE       <= cw5(0);
-
+  
+  cw2 <= cw_mem(to_integer(unsigned'(IR_opcode(6) & IR_opcode(5) & IR_opcode(4) & IR_opcode(2))));
+  
   -- process to pipeline control words
   CW_PIPE: process (Clk, Rst)
   begin  -- process Clk
     if Rst = '0' then                   -- asynchronous reset (active low)
-      cw1 <= (others => '0');
-      --cw2 <= (others => '0');
+      --cw1 <= (others => '0');
       cw3 <= (others => '0');
       cw4 <= (others => '0');
       cw5 <= (others => '0');
       aluOpcode1 <= NOP;
       --aluOpcode2 <= NOP;
      -- aluOpcode3 <= NOP;
+   
+     
     elsif Clk'event and Clk = '1' then  -- rising clock edge
       --cw1 <= cw;                          
-      --cw2 <= cw(CW_SIZE-1 - 2 downto 0); 
+      --cw2 <= cw(CW_SIZE-1 - 2 downto 0);
+     -- cw2 <= cw2_var;
       cw3 <= cw2(14 downto 0);   
       cw4 <= cw3(8 downto 0); 
       cw5 <= cw4(2 downto 0); 
@@ -193,6 +180,7 @@ begin  -- cu_rtl
 				when "000" => aluOpcode_i <= ADD;
 				when "100" => aluOpcode_i <= EXOR;
         when "010" => aluOpcode_i <= SLT;
+        when "011" => aluOpcode_i <= ABSV; --replacing the SLTU instr. of the RV32I
 				when others => aluOpcode_i <= NOP;
 			end case;
                 -- I type
@@ -210,7 +198,7 @@ begin  -- cu_rtl
                 -- SW
     when "0100011" => aluOpcode_i <= SW;
                 -- JAL
-    --when "1101111" => aluOpcode_i <= JAL;
+    when "1101111" => aluOpcode_i <= JAL;
                 -- AUIPC
     --when "0010111" => aluOpcode_i <= AUIPC;
                 -- LUI

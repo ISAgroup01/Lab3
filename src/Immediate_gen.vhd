@@ -13,9 +13,9 @@ architecture Behavioral of Imm_gen is
 signal opcode : std_logic_vector(6 downto 0);
 --signal funct : std_logic_vector(2 downto 0);
 signal ext_i, ext_s : std_logic_vector(19 downto 0);
-signal ext_b : std_logic_vector(18 downto 0);
+signal ext_b : std_logic_vector(19 downto 0);
 signal ext_u : std_logic_vector(11 downto 0);
-signal ext_j : std_logic_vector(10 downto 0);
+signal ext_j : std_logic_vector(11 downto 0);
 begin
 	opcode <= IMM_IN(6 downto 0);  --retireve opcode from IR 
 	--funct  <= IMM_IN(14 downto 0); --retireve funct from IR
@@ -61,12 +61,12 @@ begin
 		-- B-type
 		when "1100011" => --BEQ
 			--ext_b <= (others => IMM_IN(31));
-			IMM_OUT <= ext_b & IMM_IN(31) & IMM_IN(7) & IMM_IN(30 downto 25) & IMM_IN(11 downto 8) & '0';
+			IMM_OUT <= ext_b & IMM_IN(31) & IMM_IN(7) & IMM_IN(30 downto 25) & IMM_IN(11 downto 8);
 		
 		-- J-type
 		when "1101111" => --JAL
 			--ext_j <= (others => IMM_IN(31));
-			IMM_OUT <= ext_j & IMM_IN(31) & IMM_IN(19 downto 12) & IMM_IN(20) & IMM_IN(30 downto 21) & '0';
+			IMM_OUT <= ext_j & IMM_IN(31) & IMM_IN(19 downto 12) & IMM_IN(20) & IMM_IN(30 downto 21);
 		
 		-- U-type
       when "0010111" => --AUIPC
