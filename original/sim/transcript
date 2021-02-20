@@ -1,0 +1,457 @@
+# //  ModelSim SE 6.2g Feb 21 2007 Linux 3.10.0-957.5.1.el7.x86_64
+# //
+# //  Copyright 1991-2007 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+vlib work
+# Loading project RISCV
+# Compile of ALU.vhd failed with 1 errors.
+# Compile of CSA_32bit.vhd failed with 1 errors.
+# Compile of CU.vhd failed with 2 errors.
+# Compile of DP1_fetch.vhd failed with 1 errors.
+# Compile of DP2_decode.vhd failed with 1 errors.
+# Compile of DP3_execute.vhd failed with 1 errors.
+# Compile of FA.vhd failed with 1 errors.
+# Compile of Immediate_gen.vhd failed with 1 errors.
+# Compile of mux2to1.vhd was successful.
+# Compile of mux4to1.vhd was successful.
+# Compile of RCA_8bit.vhd failed with 1 errors.
+# Compile of reg.vhd failed with 1 errors.
+# Compile of reg_1.vhd failed with 1 errors.
+# Compile of RegFile_behav.vhd was successful.
+# Compile of RISC.vhd failed with 1 errors.
+# Compile of RISCV_package.vhd was successful.
+# Compile of tb_RISCV.vhd was successful.
+# 17 compiles, 12 failed with 13 errors. 
+# Compile of ALU.vhd was successful.
+# Compile of CSA_32bit.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of DP1_fetch.vhd was successful.
+# Compile of DP2_decode.vhd was successful.
+# Compile of DP3_execute.vhd was successful.
+# Compile of FA.vhd was successful.
+# Compile of Immediate_gen.vhd was successful.
+# Compile of mux2to1.vhd was successful.
+# Compile of mux4to1.vhd was successful.
+# Compile of RCA_8bit.vhd was successful.
+# Compile of reg.vhd was successful.
+# Compile of reg_1.vhd was successful.
+# Compile of RegFile_behav.vhd was successful.
+# Compile of RISC.vhd was successful.
+# Compile of RISCV_package.vhd was successful.
+# Compile of tb_RISCV.vhd was successful.
+# 17 compiles, 0 failed with no errors. 
+do run.do
+# vsim work.tb_riscv 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading work.riscv_package
+# Loading work.tb_riscv(tb)#1
+# Loading work.risc(structural)#1
+# Loading work.fetch(struct)#1
+# Loading work.mux2to1(behavioral)#1
+# Loading work.reg(regsynch)#1
+# Loading work.csa(struct)#1
+# Loading work.rca(struct)
+# Loading work.fa(struct)
+# Loading work.mux2to1(behavioral)#2
+# Loading work.mux2to1(behavioral)#3
+# Loading work.cu(cu_hw)
+# Loading work.decode(struct)
+# Loading work.regfile_behav(behavioral)
+# Loading work.imm_gen(behavioral)
+# Loading work.reg(regsynch)#2
+# Loading work.execute(struct)#1
+# Loading work.alu(behavior)#1
+# Loading work.reg_1(regsynch)
+# Loading work.mux4to1(behavioral)#1
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 12
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 13
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 14
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 15
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 16
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 17
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 18
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 19
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 20
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 21
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 22
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 23
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 24
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 25
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 26
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 27
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 28
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 29
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 30
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 31
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 32
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 33
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 34
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 36
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 37
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 38
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 39
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 40
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 41
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 42
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 43
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 44
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 45
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 46
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 47
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 48
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 49
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 50
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 51
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 52
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 53
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 54
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 55
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 56
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 57
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 58
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 59
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 60
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 70
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 71
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 72
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 73
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 74
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 75
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 76
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 77
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 78
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 79
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 80
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 81
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 82
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 83
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 84
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 85
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 91
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 92
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 93
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 94
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 95
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 98
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 99
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 100
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 101
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 102
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 103
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 104
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 105
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 106
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 107
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 108
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 109
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 110
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 111
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 112
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 113
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 114
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 115
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 116
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 117
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 118
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 119
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 120
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 121
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 122
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 123
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 124
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 125
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 126
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 127
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 128
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 129
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 130
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 131
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 132
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 133
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 134
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 135
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 136
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 137
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 138
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 139
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 140
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 141
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 142
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 143
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 144
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 145
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 146
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 147
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 148
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 149
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 150
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 151
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 152
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 153
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 154
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 155
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 156
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 157
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 158
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 159
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 160
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 161
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 162
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 163
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 164
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 165
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 166
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 167
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 168
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 169
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 170
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 171
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 172
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 173
+# ** Error: Nested groups not allowed.  Ignoring remainder of command.
+# Executing ONERROR command at macro ././wave.do line 174
+# ** Error: unknown option "-timelineunits"
+# Executing ONERROR command at macro ././wave.do line 189
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv/risc_v/dp_cu
+do run.do
+# vsim work.tb_riscv 
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading work.riscv_package
+# Loading work.tb_riscv(tb)#1
+# Loading work.risc(structural)#1
+# Loading work.fetch(struct)#1
+# Loading work.mux2to1(behavioral)#1
+# Loading work.reg(regsynch)#1
+# Loading work.csa(struct)#1
+# Loading work.rca(struct)
+# Loading work.fa(struct)
+# Loading work.mux2to1(behavioral)#2
+# Loading work.mux2to1(behavioral)#3
+# Loading work.cu(cu_hw)
+# Loading work.decode(struct)
+# Loading work.regfile_behav(behavioral)
+# Loading work.imm_gen(behavioral)
+# Loading work.reg(regsynch)#2
+# Loading work.execute(struct)#1
+# Loading work.alu(behavior)#1
+# Loading work.reg_1(regsynch)
+# Loading work.mux4to1(behavioral)#1
+# ** Error: Cannot open macro file: ./wave_new.do
+# Error in macro ./run.do line 2
+# Cannot open macro file: ./wave_new.do
+#     while executing
+# "do ./wave_new.do"
+do run.do
+# vsim work.tb_riscv 
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading work.riscv_package
+# Loading work.tb_riscv(tb)#1
+# Loading work.risc(structural)#1
+# Loading work.fetch(struct)#1
+# Loading work.mux2to1(behavioral)#1
+# Loading work.reg(regsynch)#1
+# Loading work.csa(struct)#1
+# Loading work.rca(struct)
+# Loading work.fa(struct)
+# Loading work.mux2to1(behavioral)#2
+# Loading work.mux2to1(behavioral)#3
+# Loading work.cu(cu_hw)
+# Loading work.decode(struct)
+# Loading work.regfile_behav(behavioral)
+# Loading work.imm_gen(behavioral)
+# Loading work.reg(regsynch)#2
+# Loading work.execute(struct)#1
+# Loading work.alu(behavior)#1
+# Loading work.reg_1(regsynch)
+# Loading work.mux4to1(behavioral)#1
+# ** Error: unknown option "-timelineunits"
+# Executing ONERROR command at macro ././wave_new.do line 194
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv/risc_v/dp_cu

@@ -1,0 +1,75 @@
+\chapter{Datapath}
+We have implemented the VHDL architecture of the processor(Figure \ref{fig1}), splitted in 5 pipeline stages: \\
+Fetch, Decode, Execute, Mem, WriteBack. \\
+Instructions and datas of the entire procssor are represented on 32 bits. 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=18cm]{./images/structure}
+	\caption{General structure}
+	\label{fig1}
+\end{figure}
+As specification says, Instruction and Data memory was not included. We have implemented it in the testbench.\\
+Here we have tried to impement most of the single blocks in a Structural way. \\
+Only Register file, alu and all filpflops are implemented as Behavioral.\\
+\\
+On Figure \ref{fig2} it is showed how we have organized the VHDL files.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=15cm]{./images/VHDL_structure}
+	\caption{General VHDL structure}
+	\label{fig2}
+\end{figure}
+Now more details on singolar block implementation.
+\section{Fetch}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=10cm]{./images/CSEA}
+	\caption{CSEA structure}
+	\label{fig3}
+\end{figure}
+To update the PC we have implemented a Carry Select Adder. \\
+Each singolar blocks are compose of a 8 bit Ripple carry adder. In this way we have reduced the delay.
+\section{Decode}
+The register file is behavioral. It's composed of 32 registers on 32 bits. \\
+At each rising edge of the clock, read two value given the addresses Register\_read1 and 2.\\
+If the write enable is 1, we write in the register location.
+It have this port:
+\begin{itemize}
+	\item Write enable port;
+	\item Register read1;
+	\item Register read2;
+	\item Write register;
+	\item Write data;
+	\item Read Data1;
+	\item Read Data1;
+	\item Clock;
+	\item Reset;		
+\end{itemize}
+
+The Immediate\_generate block read the instruction and generate the Immediate value.
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=10cm]{./images/immediate_gen}
+	\caption{Instruction organization}
+	\label{fig4}
+\end{figure} 
+So based on which instruction we are decoding, organize a 32 bits Immediate value.
+\section{Execute}
+The adder that create the new program counter is again implemented with a 32 bits CSEA.
+Then we have the Alu that receive two inputs value and the Opcode specify which instruction implement.
+\section{Memory}
+This module is implemented in the RISC top entity. Contain only the AND port that generate the selection signal for the multiplexer on the fetch phase.
+\section{Write back}
+This module is implemented in the RISC top entity. Contain a multiplexer of 4 inputs and decide between:
+\begin{itemize}
+	\item Data memory read;
+	\item Alu result;
+	\item PC + 4 taken from fetch unit;
+	\item PC where we need to jump;
+\end{itemize}
+The last two inputs are considered for the instruction auipc and jal.
+For the JAL stores the address of the instruction following the jump (pc+4) into register rd.\\
+So we take the updated PC in the fetch phase and we bring it in the Write Back phase.\\
+AUIPC forms a 32-bit offset from the 20-bit U-immediate, adds this offset to the address of the AUIPC instruction.\\
+Then places the result in register rd. 
+We take the result in the Execute phase, where with the CSEA we create the branch PC.

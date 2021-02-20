@@ -1,0 +1,160 @@
+/home/isa01/Desktop/Lab3/Lab3/original/src/DP1_fetch.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/Lab3/Lab3/original/src/DP1_fetch.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package riscv_package
+-- Compiling entity fetch
+-- Compiling architecture struct of fetch
+
+} {} {}} /home/isa01/Desktop/Lab3/Lab3/original/src/reg.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/Lab3/Lab3/original/src/reg.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package riscv_package
+-- Compiling entity reg
+-- Compiling architecture regsynch of reg
+
+} {} {}} /home/isa01/Desktop/Lab3/Lab3/original/src/FA.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/Lab3/Lab3/original/src/FA.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package riscv_package
+-- Compiling entity fa
+-- Compiling architecture struct of fa
+
+} {} {}} /home/isa01/Desktop/Lab3/Lab3/original/src/RISC.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/Lab3/Lab3/original/src/RISC.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package riscv_package
+-- Compiling entity risc
+-- Compiling architecture structural of risc
+
+} {} {}} /home/isa01/Desktop/Lab3/Lab3/original/src/DP3_execute.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/Lab3/Lab3/original/src/DP3_execute.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package riscv_package
+-- Compiling entity execute
+-- Compiling architecture struct of execute
+
+} {} {}} /home/isa01/Desktop/Lab3/Lab3/original/tb/tb_RISCV.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/Lab3/Lab3/original/tb/tb_RISCV.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package numeric_std
+-- Loading package textio
+-- Loading package std_logic_textio
+-- Loading package riscv_package
+-- Compiling entity tb_riscv
+-- Compiling architecture tb of tb_riscv
+
+} {} {}} /home/isa01/Desktop/Lab3/Lab3/original/src/RCA_8bit.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/Lab3/Lab3/original/src/RCA_8bit.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package riscv_package
+-- Compiling entity rca
+-- Compiling architecture struct of rca
+
+} {} {}} /home/isa01/Desktop/Lab3/Lab3/original/src/reg_1.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/Lab3/Lab3/original/src/reg_1.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package riscv_package
+-- Compiling entity reg_1
+-- Compiling architecture regsynch of reg_1
+
+} {} {}} /home/isa01/Desktop/Lab3/Lab3/original/src/CU.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/Lab3/Lab3/original/src/CU.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package numeric_std
+-- Loading package riscv_package
+-- Compiling entity cu
+-- Compiling architecture cu_hw of cu
+
+} {} {}} /home/isa01/Desktop/Lab3/Lab3/original/src/Immediate_gen.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/Lab3/Lab3/original/src/Immediate_gen.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package riscv_package
+-- Compiling entity imm_gen
+-- Compiling architecture behavioral of imm_gen
+
+} {} {}} /home/isa01/Desktop/Lab3/Lab3/original/src/mux2to1.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/Lab3/Lab3/original/src/mux2to1.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity mux2to1
+-- Compiling architecture behavioral of mux2to1
+
+} {} {}} /home/isa01/Desktop/Lab3/Lab3/original/src/DP2_decode.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/Lab3/Lab3/original/src/DP2_decode.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package riscv_package
+-- Compiling entity decode
+-- Compiling architecture struct of decode
+
+} {} {}} /home/isa01/Desktop/Lab3/Lab3/original/src/mux4to1.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/Lab3/Lab3/original/src/mux4to1.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling entity mux4to1
+-- Compiling architecture behavioral of mux4to1
+
+} {} {}} /home/isa01/Desktop/Lab3/Lab3/original/src/CSA_32bit.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/Lab3/Lab3/original/src/CSA_32bit.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package riscv_package
+-- Compiling entity csa
+-- Compiling architecture struct of csa
+
+} {} {}} /home/isa01/Desktop/Lab3/Lab3/original/src/ALU.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/Lab3/Lab3/original/src/ALU.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Loading package riscv_package
+-- Compiling entity alu
+-- Compiling architecture behavior of alu
+-- Compiling configuration cfg_alu_behavioral
+-- Loading entity alu
+-- Loading architecture behavior of alu
+
+} {} {}} /home/isa01/Desktop/Lab3/Lab3/original/src/RISCV_package.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/Lab3/Lab3/original/src/RISCV_package.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package numeric_std
+-- Compiling package riscv_package
+
+} {} {}} /home/isa01/Desktop/Lab3/Lab3/original/src/RegFile_behav.vhd {1 {vcom -work work -2002 -explicit -vopt /home/isa01/Desktop/Lab3/Lab3/original/src/RegFile_behav.vhd
+Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package std_logic_unsigned
+-- Loading package numeric_std
+-- Compiling entity regfile_behav
+-- Compiling architecture behavioral of regfile_behav
+
+} {} {}}

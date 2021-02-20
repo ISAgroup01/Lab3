@@ -1,0 +1,41 @@
+H 2141964 11 3 0 17 20 0 0 0 0
+L 4 ieee 19 $MODEL_TECH/../ieee
+L 3 std 18 $MODEL_TECH/../std
+L 4 work 6 ./work
+D 20 ./work.alu(behavior) :K3bkcn@S1]HJH^GolUa52 11 1
+D 18 ./work.csa(struct) 05Mcm[Zahgm9I=hfhk;F?3 5 1
+D 16 ./work.cu(cu_hw) VXCX<6f<dzfbBJ5H8kJEf2 7 1
+D 21 ./work.decode(struct) zf8V76c8?S55=PXG_2C770 10 1
+D 22 ./work.execute(struct) A[YO<Fl2CDRJEf:ACd1AM0 12 1
+D 17 ./work.fa(struct) HgRG83kL9M7M1jzc?d^@b2 3 1
+D 20 ./work.fetch(struct) eeAG4X?CA@L^b?A56CcgH0 6 1
+D 26 ./work.imm_gen(behavioral) BoI1hla0i[^Vb@PQQQ;WW2 9 1
+D 26 ./work.mux2to1(behavioral) eNFg4SASeDUm2Xh:]eOjO1 1 1
+D 26 ./work.mux4to1(behavioral) 97k>=;4:Y;4h?n:mjeLN=2 14 1
+D 18 ./work.rca(struct) NXj;TYLzW0A:@QObNV_Ma0 4 1
+D 20 ./work.reg(regsynch) ISD5V:;:XoQ8:UGX>W>SE1 2 1
+D 22 ./work.reg_1(regsynch) Pi^`FgHLc00Y9e7eng0cI1 13 1
+D 32 ./work.regfile_behav(behavioral) A=LWbB=bbGnIc?0BgeOY52 8 1
+D 23 ./work.risc(structural) f?@ZoR@fV<NUPVgeQ[heU2 15 1
+D 20 ./work.riscv_package Vg0^<e?Jn?D;CJQ;ePhF51 0 1
+D 19 ./work.tb_riscv(tb) mImWoKn[ZnDKHjoQFMaj>2 16 1
+2 0  1 hmNoj_onWV[`mg]mNe:Ea2 19 16 1
+2 0  1 Rl:NhDXR@mj9ho>l96m`k1 7 5 1
+2 0  0 WK>PHne_IAAC9VFoUVAjo1 11 9 1
+2 0  1 L8abFPVjh3YHOcB9EzHRo3 14 11 1
+2 0  1 1ok?K>EK8BOHzfk3B`JPn3 15 12 1
+2 0  1 c`VWzI[2lFz[]6c?8^7S]3 17 14 1
+2 0  0 ;`3YhIhiB]IU@2j5[8KSI2 9 7 1
+2 0  0 JM9[OM66bT37@_c<;0?Z42 10 8 1
+2 0  0 2QhhI@eWD?_KIgJ>mi<E70 0 0 1
+2 0  1 ajTEPfYjCg797Kfoo:WA63 1 1 1
+2 0  2 ?3ko>4I75o;>fDJjY:O^=0 5 1 1
+2 0  3 5eoZ8J_@Aj8];92OL?D>B0 6 1 1
+2 0  0 CE:_gfSV2lZ6Y_M6Gj[JY2 12 10 1
+2 0  1 NoJF4_HLoh@RMQgJRS0K=2 8 6 1
+2 0  0 8j2KPa>U6]A]QU[oeFfKb1 4 4 1
+2 0  0 Tf9_jBCIX?l811;nKg4YM3 3 3 1
+2 0  1 :o<46I432Vzm4dmBjQ:a`3 2 2 1
+2 0  2 OgS95SYn_<]TN@nmdnOjE3 13 2 1
+2 0  1 h1Rd1_EQohDP^a8OSVRLX1 18 15 1
+2 0  0 VNGabm@T@>T9LkViTmXgL3 16 13 1

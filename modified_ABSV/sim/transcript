@@ -1,0 +1,213 @@
+# //  ModelSim SE 6.2g Feb 21 2007 Linux 3.10.0-957.5.1.el7.x86_64
+# //
+# //  Copyright 1991-2007 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Project file /home/isa01/Desktop/Lab3/Lab3/modified_ABSV/sim/RISCV_mod.mpf was not found.
+# Unable to open project.
+vlib work
+# Loading project RISCV
+# Compile of ALU.vhd failed with 1 errors.
+# Compile of CSA_32bit.vhd failed with 1 errors.
+# Compile of CU.vhd failed with 2 errors.
+# Compile of DP1_fetch.vhd failed with 1 errors.
+# Compile of DP2_decode.vhd failed with 1 errors.
+# Compile of DP3_execute.vhd failed with 1 errors.
+# Compile of FA.vhd failed with 1 errors.
+# Compile of Immediate_gen.vhd failed with 1 errors.
+# Compile of mux2to1.vhd was successful.
+# Compile of mux4to1.vhd was successful.
+# Compile of RCA_8bit.vhd failed with 1 errors.
+# Compile of reg.vhd failed with 1 errors.
+# Compile of reg_1.vhd failed with 1 errors.
+# Compile of RegFile_behav.vhd was successful.
+# Compile of RISC.vhd failed with 1 errors.
+# Compile of RISCV_package.vhd was successful.
+# Compile of tb_RISCV.vhd was successful.
+# 17 compiles, 12 failed with 13 errors. 
+# Compile of ALU.vhd was successful.
+# Compile of CSA_32bit.vhd was successful.
+# Compile of CU.vhd was successful.
+# Compile of DP1_fetch.vhd was successful.
+# Compile of DP2_decode.vhd was successful.
+# Compile of DP3_execute.vhd was successful.
+# Compile of FA.vhd was successful.
+# Compile of Immediate_gen.vhd was successful.
+# Compile of mux2to1.vhd was successful.
+# Compile of mux4to1.vhd was successful.
+# Compile of RCA_8bit.vhd was successful.
+# Compile of reg.vhd was successful.
+# Compile of reg_1.vhd was successful.
+# Compile of RegFile_behav.vhd was successful.
+# Compile of RISC.vhd was successful.
+# Compile of RISCV_package.vhd was successful.
+# Compile of tb_RISCV.vhd was successful.
+# 17 compiles, 0 failed with no errors. 
+do run.do
+# vsim work.tb_riscv 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading work.riscv_package
+# Loading work.tb_riscv(tb)#1
+# Loading work.risc(structural)#1
+# Loading work.fetch(struct)#1
+# Loading work.mux2to1(behavioral)#1
+# Loading work.reg(regsynch)#1
+# Loading work.csa(struct)#1
+# Loading work.rca(struct)
+# Loading work.fa(struct)
+# Loading work.mux2to1(behavioral)#2
+# Loading work.mux2to1(behavioral)#3
+# Loading work.cu(cu_hw)
+# Loading work.decode(struct)
+# Loading work.regfile_behav(behavioral)
+# Loading work.imm_gen(behavioral)
+# Loading work.reg(regsynch)#2
+# Loading work.execute(struct)#1
+# Loading work.alu(behavior)#1
+# Loading work.reg_1(regsynch)
+# Loading work.mux4to1(behavioral)#1
+# ** Error: Cannot open macro file: ./wave.do
+# Error in macro ./run.do line 2
+# Cannot open macro file: ./wave.do
+#     while executing
+# "do ./wave.do"
+do run.do
+# vsim work.tb_riscv 
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading work.riscv_package
+# Loading work.tb_riscv(tb)#1
+# Loading work.risc(structural)#1
+# Loading work.fetch(struct)#1
+# Loading work.mux2to1(behavioral)#1
+# Loading work.reg(regsynch)#1
+# Loading work.csa(struct)#1
+# Loading work.rca(struct)
+# Loading work.fa(struct)
+# Loading work.mux2to1(behavioral)#2
+# Loading work.mux2to1(behavioral)#3
+# Loading work.cu(cu_hw)
+# Loading work.decode(struct)
+# Loading work.regfile_behav(behavioral)
+# Loading work.imm_gen(behavioral)
+# Loading work.reg(regsynch)#2
+# Loading work.execute(struct)#1
+# Loading work.alu(behavior)#1
+# Loading work.reg_1(regsynch)
+# Loading work.mux4to1(behavioral)#1
+# ** Error: unknown option "-timelineunits"
+# Executing ONERROR command at macro ././wave_new.do line 194
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv/risc_v/dp_cu
+do wave_new.do
+# ** Error: unknown option "-timelineunits"
+# Executing ONERROR command at macro ./wave_new.do line 194
+restart -f
+do wave_new.do
+# ** Error: unknown option "-timelineunits"
+# Executing ONERROR command at macro ./wave_new.do line 194
+write format wave -window .main_pane.mdi.interior.cs.vm.paneset.cli_0.wf.clip.cs.pw.wf /home/isa01/Desktop/Lab3/Lab3/modified_ABSV/sim/wave_new.do
+do run.do
+# vsim work.tb_riscv 
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading work.riscv_package
+# Loading work.tb_riscv(tb)#1
+# Loading work.risc(structural)#1
+# Loading work.fetch(struct)#1
+# Loading work.mux2to1(behavioral)#1
+# Loading work.reg(regsynch)#1
+# Loading work.csa(struct)#1
+# Loading work.rca(struct)
+# Loading work.fa(struct)
+# Loading work.mux2to1(behavioral)#2
+# Loading work.mux2to1(behavioral)#3
+# Loading work.cu(cu_hw)
+# Loading work.decode(struct)
+# Loading work.regfile_behav(behavioral)
+# Loading work.imm_gen(behavioral)
+# Loading work.reg(regsynch)#2
+# Loading work.execute(struct)#1
+# Loading work.alu(behavior)#1
+# Loading work.reg_1(regsynch)
+# Loading work.mux4to1(behavioral)#1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv/risc_v/dp_cu
+do run.do
+# vsim work.tb_riscv 
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading work.riscv_package
+# Loading work.tb_riscv(tb)#1
+# Loading work.risc(structural)#1
+# Loading work.fetch(struct)#1
+# Loading work.mux2to1(behavioral)#1
+# Loading work.reg(regsynch)#1
+# Loading work.csa(struct)#1
+# Loading work.rca(struct)
+# Loading work.fa(struct)
+# Loading work.mux2to1(behavioral)#2
+# Loading work.mux2to1(behavioral)#3
+# Loading work.cu(cu_hw)
+# Loading work.decode(struct)
+# Loading work.regfile_behav(behavioral)
+# Loading work.imm_gen(behavioral)
+# Loading work.reg(regsynch)#2
+# Loading work.execute(struct)#1
+# Loading work.alu(behavior)#1
+# Loading work.reg_1(regsynch)
+# Loading work.mux4to1(behavioral)#1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv/risc_v/dp_decode/register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_riscv/risc_v/dp_cu
+quit

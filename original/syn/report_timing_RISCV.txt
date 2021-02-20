@@ -1,0 +1,103 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RISC' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISC
+Version: O-2018.06-SP4
+Date   : Sat Feb 20 20:44:21 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: DP_FETCH/REG_PC/REG_OUT_reg[24]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: DP_FETCH/REG_PC/REG_OUT_reg[31]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISC               5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  DP_FETCH/REG_PC/REG_OUT_reg[24]/CK (DFF_X1)             0.00 #     0.00 r
+  DP_FETCH/REG_PC/REG_OUT_reg[24]/Q (DFF_X1)              0.10       0.10 f
+  DP_FETCH/REG_PC/REG_OUT[24] (REG_N32_1)                 0.00       0.10 f
+  DP_FETCH/PC_update/A_csa[24] (CSA_0)                    0.00       0.10 f
+  DP_FETCH/PC_update/RCAi_1_3/A_rca[0] (RCA_8)            0.00       0.10 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_0/A (FA_64)              0.00       0.10 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_0/U2/ZN (XNOR2_X1)       0.07       0.17 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_0/U5/ZN (AOI22_X1)       0.05       0.22 r
+  DP_FETCH/PC_update/RCAi_1_3/FA_0/U4/ZN (INV_X1)         0.03       0.25 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_0/Cout (FA_64)           0.00       0.25 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_1/Cin (FA_63)          0.00       0.25 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_1/U2/ZN (AOI22_X1)     0.05       0.30 r
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_1/U1/ZN (INV_X1)       0.03       0.33 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_1/Cout (FA_63)         0.00       0.33 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_2/Cin (FA_62)          0.00       0.33 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_2/U2/ZN (AOI22_X1)     0.06       0.39 r
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_2/U1/ZN (INV_X1)       0.03       0.41 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_2/Cout (FA_62)         0.00       0.41 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_3/Cin (FA_61)          0.00       0.41 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_3/U2/ZN (AOI22_X1)     0.06       0.47 r
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_3/U1/ZN (INV_X1)       0.03       0.50 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_3/Cout (FA_61)         0.00       0.50 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_4/Cin (FA_60)          0.00       0.50 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_4/U2/ZN (AOI22_X1)     0.06       0.55 r
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_4/U1/ZN (INV_X1)       0.03       0.58 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_4/Cout (FA_60)         0.00       0.58 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_5/Cin (FA_59)          0.00       0.58 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_5/U2/ZN (AOI22_X1)     0.06       0.63 r
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_5/U1/ZN (INV_X1)       0.03       0.66 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_5/Cout (FA_59)         0.00       0.66 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_6/Cin (FA_58)          0.00       0.66 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_6/U7/ZN (INV_X1)       0.03       0.69 r
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_6/U1/ZN (OAI22_X1)     0.04       0.72 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_6/Cout (FA_58)         0.00       0.72 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_7/Cin (FA_57)          0.00       0.72 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_7/U3/Z (XOR2_X1)       0.07       0.80 f
+  DP_FETCH/PC_update/RCAi_1_3/FA_i_7/S (FA_57)            0.00       0.80 f
+  DP_FETCH/PC_update/RCAi_1_3/S_rca[7] (RCA_8)            0.00       0.80 f
+  DP_FETCH/PC_update/mux2/B[7] (mux2to1_N9_4)             0.00       0.80 f
+  DP_FETCH/PC_update/mux2/U18/ZN (AOI22_X1)               0.06       0.86 r
+  DP_FETCH/PC_update/mux2/U12/ZN (INV_X1)                 0.02       0.88 f
+  DP_FETCH/PC_update/mux2/S[7] (mux2to1_N9_4)             0.00       0.88 f
+  DP_FETCH/PC_update/mux3/B[15] (mux2to1_N17_0)           0.00       0.88 f
+  DP_FETCH/PC_update/mux3/U36/ZN (AOI22_X1)               0.05       0.93 r
+  DP_FETCH/PC_update/mux3/U19/ZN (INV_X1)                 0.02       0.96 f
+  DP_FETCH/PC_update/mux3/S[15] (mux2to1_N17_0)           0.00       0.96 f
+  DP_FETCH/PC_update/S_csa[31] (CSA_0)                    0.00       0.96 f
+  DP_FETCH/mux_IF/A[31] (mux2to1_N32_0)                   0.00       0.96 f
+  DP_FETCH/mux_IF/U7/Z (MUX2_X1)                          0.07       1.02 f
+  DP_FETCH/mux_IF/S[31] (mux2to1_N32_0)                   0.00       1.02 f
+  DP_FETCH/REG_PC/REG_IN[31] (REG_N32_1)                  0.00       1.02 f
+  DP_FETCH/REG_PC/U73/ZN (INV_X1)                         0.03       1.05 r
+  DP_FETCH/REG_PC/U10/ZN (OAI22_X1)                       0.03       1.08 f
+  DP_FETCH/REG_PC/REG_OUT_reg[31]/D (DFF_X1)              0.01       1.09 f
+  data arrival time                                                  1.09
+
+  clock MY_CLK (rise edge)                                1.20       1.20
+  clock network delay (ideal)                             0.00       1.20
+  clock uncertainty                                      -0.07       1.13
+  DP_FETCH/REG_PC/REG_OUT_reg[31]/CK (DFF_X1)             0.00       1.13 r
+  library setup time                                     -0.04       1.09
+  data required time                                                 1.09
+  --------------------------------------------------------------------------
+  data required time                                                 1.09
+  data arrival time                                                 -1.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
