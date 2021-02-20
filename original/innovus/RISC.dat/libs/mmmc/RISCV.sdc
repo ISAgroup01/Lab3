@@ -1,0 +1,1 @@
+/home/isa01/Desktop/Lab3/Lab3/original/netlist/RISCV.sdc
