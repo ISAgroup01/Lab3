@@ -1,11 +1,11 @@
 \chapter{Introduction}
+
 The goal of this lab is to design a RISCV-Lite processor.\\
-Data and instruction are represented on 32 bits. The register file contain 32 registers
+Data and instructions are represented on 32 bits. The register file contain 32 registers
 of 32 bits, so we need 5 bits to address them.
 We have implemented a pipeline processor with 5 stages:\\
-Fetch, Decode, Execute, Mem, WriteBack. \\
-For simplicity, we have not implemented a Branch prediction unit and a Forward Unit.\\
-So in case of dependencies, our processor is less powerful.
+Fetch (IF), Decode (ID), Execute (EX), Memory (MEM) and Write Back (WB). \\
+For simplicity, we have not implemented a Branch prediction unit and a Forward Unit, therefor our processor cannot handle data dependencies and will be less performant, however it will have a smaller area.\\
 \vspace{1cm}
 \\
 \centerline{Here you can find the code of our design:}\\

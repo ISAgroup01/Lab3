@@ -1,15 +1,17 @@
 \babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}Introduction}{1}{}%
-\contentsline {chapter}{\numberline {2}Datapath}{2}{}%
-\contentsline {section}{\numberline {2.1}Fetch}{3}{}%
-\contentsline {section}{\numberline {2.2}Decode}{3}{}%
-\contentsline {section}{\numberline {2.3}Execute}{4}{}%
-\contentsline {section}{\numberline {2.4}Memory}{4}{}%
-\contentsline {section}{\numberline {2.5}Write back}{4}{}%
-\contentsline {chapter}{\numberline {3}Control Unit}{6}{}%
-\contentsline {section}{\numberline {3.1}Control Word Generation}{6}{}%
-\contentsline {section}{\numberline {3.2}ALU Opcode generation}{8}{}%
-\contentsline {chapter}{\numberline {4}Testbench}{9}{}%
-\contentsline {chapter}{\numberline {5}Synthesis AND Timing}{11}{}%
-\contentsline {section}{\numberline {5.1}Area analysis}{11}{}%
-\contentsline {section}{\numberline {5.2}Timing analysis}{12}{}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}% 
+\contentsline {chapter}{\numberline {2}Datapath}{2}% 
+\contentsline {section}{\numberline {2.1}Fetch}{3}% 
+\contentsline {section}{\numberline {2.2}Decode}{4}% 
+\contentsline {section}{\numberline {2.3}Execute}{4}% 
+\contentsline {section}{\numberline {2.4}Memory}{5}% 
+\contentsline {section}{\numberline {2.5}Write back}{5}% 
+\contentsline {chapter}{\numberline {3}Control Unit}{6}% 
+\contentsline {section}{\numberline {3.1}Control Word Generation}{6}% 
+\contentsline {section}{\numberline {3.2}ALU Opcode generation}{8}% 
+\contentsline {section}{\numberline {3.3}Absolute value (ABSV))}{8}% 
+\contentsline {chapter}{\numberline {4}Testbench}{10}% 
+\contentsline {section}{\numberline {4.1}ABSV testbench}{12}% 
+\contentsline {chapter}{\numberline {5}Synthesis AND Timing}{13}% 
+\contentsline {section}{\numberline {5.1}Area analysis}{13}% 
+\contentsline {section}{\numberline {5.2}Timing analysis}{13}% 

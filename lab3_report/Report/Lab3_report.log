@@ -1,205 +1,196 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.17)  21 FEB 2021 09:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.9)  21 FEB 2021 15:28
 entering extended mode
-**./Lab3_report.tex
-(Lab3_report.tex
-LaTeX2e <2020-10-01> patch level 2
-L3 programming layer <2020-10-27> xparse <2020-03-03>
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
-Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/base\bk10.clo
-File: bk10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**Lab3_report.tex
+(./Lab3_report.tex
+LaTeX2e <2018-12-01>
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
-\c@part=\count175
-\c@chapter=\count176
-\c@section=\count177
-\c@subsection=\count178
-\c@subsubsection=\count179
-\c@paragraph=\count180
-\c@subparagraph=\count181
-\c@figure=\count182
-\c@table=\count183
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-\bibindent=\dimen138
+\c@part=\count80
+\c@chapter=\count81
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\c@figure=\count87
+\c@table=\count88
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
 )
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2020/10/27 3.51 The Babel package
+(/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2019/05/04 3.31 The Babel package
 
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
-File: babel.def 2020/10/27 3.51 Babel common definitions
-\babel@savecnt=\count184
-\U@D=\dimen139
-\l@babelnohyphens=\language79
-
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
-\bbl@readstream=\read2
+(/usr/local/texlive/2019/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2019/05/04 3.31 Babel switching mechanism
 )
-\bbl@dirlevel=\count185
-
-*************************************
-* Local config file bblopts.cfg used
-*
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
- babel
-)
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.l
-df
+(/usr/local/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
-Package babel Info: \l@canadian = using hyphenrules for english
-(babel)             (\language0) on input line 102.
-Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language73) on input line 105.
-Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language73) on input line 108.
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2019/05/04 3.31 Babel common definitions
+\babel@savecnt=\count89
+\U@D=\dimen103
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count90
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
 ))
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip49
-\f@nch@O@elh=\skip50
-\f@nch@O@erh=\skip51
-\f@nch@O@olh=\skip52
-\f@nch@O@orh=\skip53
-\f@nch@O@elf=\skip54
-\f@nch@O@erf=\skip55
-\f@nch@O@olf=\skip56
-\f@nch@O@orf=\skip57
+\f@nch@headwidth=\skip43
+\f@nch@O@elh=\skip44
+\f@nch@O@erh=\skip45
+\f@nch@O@olh=\skip46
+\f@nch@O@orh=\skip47
+\f@nch@O@elf=\skip48
+\f@nch@O@erf=\skip49
+\f@nch@O@olf=\skip50
+\f@nch@O@orf=\skip51
 )
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/base\makeidx.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/makeidx.sty
 Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
-)
-(titlesec.sty
+) (./titlesec.sty
 Package: titlesec 2001/01/23 v2.4 Sectioning titles
-\ttl@box=\box47
-\titlewidth=\dimen140
- (titlesec.new *** titlesec 2.4, loading patch level 2 ***))
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+\ttl@box=\box27
+\titlewidth=\dimen104
+(./titlesec.new *** titlesec 2.4, loading patch level 2 ***))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks15
+\KV@toks@=\toks14
 )
-\lst@mode=\count186
-\lst@gtempboxa=\box48
-\lst@token=\toks16
-\lst@length=\count187
-\lst@currlwidth=\dimen141
-\lst@column=\count188
-\lst@pos=\count189
-\lst@lostspace=\dimen142
-\lst@width=\dimen143
-\lst@newlines=\count190
-\lst@lineno=\count191
-\lst@maxwidth=\dimen144
+\lst@mode=\count91
+\lst@gtempboxa=\box28
+\lst@token=\toks15
+\lst@length=\count92
+\lst@currlwidth=\dimen105
+\lst@column=\count93
+\lst@pos=\count94
+\lst@lostspace=\dimen106
+\lst@width=\dimen107
+\lst@newlines=\count95
+\lst@lineno=\count96
+\lst@maxwidth=\dimen108
 
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count192
-\lst@skipnumbers=\count193
-\lst@framebox=\box49
+(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/02/27 1.8b (Carsten Heinz)
+\c@lstnumber=\count97
+\lst@skipnumbers=\count98
+\lst@framebox=\box29
 )
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
-File: listings.cfg 2020/03/24 1.8d listings configuration
+(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/02/27 1.8b listings configuration
 ))
-Package: listings 2020/03/24 1.8d (Carsten Heinz)
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+Package: listings 2019/02/27 1.8b (Carsten Heinz)
 
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 105.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen145
-\Gin@req@width=\dimen146
-) (C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2020/09/23 v2.17i AMS math features
-\@mathmargin=\skip58
+\Gin@req@height=\dimen109
+\Gin@req@width=\dimen110
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip52
+
 For additional information on amsmath, use the `?' option.
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks17
-\ex@=\dimen147
+\@emptytoks=\toks16
+\ex@=\dimen111
 ))
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen148
+\pmbraise@=\dimen112
 )
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count194
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count195
-\leftroot@=\count196
-LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count197
-\DOTSCASE@=\count198
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box50
-\strutbox@=\box51
-\big@size=\dimen149
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count199
-\c@MaxMatrixCols=\count266
-\dotsspace@=\muskip16
-\c@parentequation=\count267
-\dspbrk@lvl=\count268
-\tag@help=\toks18
-\row@=\count269
-\column@=\count270
-\maxfields@=\count271
-\andhelp@=\toks19
-\eqnshift@=\dimen150
-\alignsep@=\dimen151
-\tagshift@=\dimen152
-\tagwidth@=\dimen153
-\totwidth@=\dimen154
-\lineht@=\dimen155
-\@envbody=\toks20
-\multlinegap=\skip59
-\multlinetaggap=\skip60
-\mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2923.
-LaTeX Info: Redefining \] on input line 2924.
+\inf@bad=\count99
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count100
+\leftroot@=\count101
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count102
+\DOTSCASE@=\count103
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen113
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count104
+\c@MaxMatrixCols=\count105
+\dotsspace@=\muskip10
+\c@parentequation=\count106
+\dspbrk@lvl=\count107
+\tag@help=\toks17
+\row@=\count108
+\column@=\count109
+\maxfields@=\count110
+\andhelp@=\toks18
+\eqnshift@=\dimen114
+\alignsep@=\dimen115
+\tagshift@=\dimen116
+\tagwidth@=\dimen117
+\totwidth@=\dimen118
+\lineht@=\dimen119
+\@envbody=\toks19
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
 )
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
-Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks22
-\thm@bodyfont=\toks23
-\thm@headfont=\toks24
-\thm@notefont=\toks25
-\thm@headpunct=\toks26
-\thm@preskip=\skip61
-\thm@postskip=\skip62
-\thm@headsep=\skip63
-\dth@everypar=\toks27
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks21
+\thm@bodyfont=\toks22
+\thm@headfont=\toks23
+\thm@notefont=\toks24
+\thm@headpunct=\toks25
+\thm@preskip=\skip55
+\thm@postskip=\skip56
+\thm@headsep=\skip57
+\dth@everypar=\toks26
 )
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
 \@indexfile=\write3
@@ -208,95 +199,140 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 Writing index file Lab3_report.idx
 
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count272
-\l__pdf_internal_box=\box52
-) (Lab3_report.aux)
+LaTeX Warning: Unused global option(s):
+    [makeidx].
+
+(./Lab3_report.aux
+
+LaTeX Warning: Label `fig4.2' multiply defined.
+
+
+LaTeX Warning: Label `fig5.6' multiply defined.
+
+)
 \openout1 = `Lab3_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
 LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
 LaTeX Font Info:    ... okay on input line 59.
 LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
 LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
 LaTeX Font Info:    ... okay on input line 59.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
 LaTeX Font Info:    ... okay on input line 59.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
 LaTeX Font Info:    ... okay on input line 59.
-\c@lstlisting=\count273
-
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
+\c@lstlisting=\count111
+ (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count274
-\scratchdimen=\dimen156
-\scratchbox=\box53
-\nofMPsegments=\count275
-\nofMParguments=\count276
-\everyMPshowfont=\toks28
-\MPscratchCnt=\count277
-\MPscratchDim=\dimen157
-\MPnumerator=\count278
-\makeMPintoPDFobject=\count279
-\everyMPtoPDFconversion=\toks29
+\scratchcounter=\count112
+\scratchdimen=\dimen120
+\scratchbox=\box32
+\nofMPsegments=\count113
+\nofMParguments=\count114
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count115
+\MPscratchDim=\dimen121
+\MPnumerator=\count116
+\makeMPintoPDFobject=\count117
+\everyMPtoPDFconversion=\toks28
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-)
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 <./logopoli.jpg, id=1, 573.8238pt x 565.1514pt>
 File: ./logopoli.jpg Graphic file (type jpg)
 <use ./logopoli.jpg>
 Package pdftex.def Info: ./logopoli.jpg  used on input line 64.
 (pdftex.def)             Requested size: 56.9055pt x 56.04414pt.
- [1
+
+[1
 
 
 
-{C:/Users/pmich/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./logopoli.jpg>
-] (Lab3_report.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./logop
+oli.jpg>] (./Lab3_report.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write4
 \openout4 = `Lab3_report.toc'.
 
-
-[1
+ [1
 
 ]
-(C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
+(/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/02/27 1.8b listings language file
 )
-(cap/cap1_Intro.tex
+(./cap/cap1_Intro.tex
 Chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--12
+Underfull \hbox (badness 10000) in paragraph at lines 3--12
 
  []
 
-) (cap/cap2_Datapath.tex [1
+) (./cap/cap2_Datapath.tex [1
 
 
 ]
 Chapter 2.
-<./images/structure.png, id=18, 699.36281pt x 395.22656pt>
+<./images/structure.png, id=19, 699.36281pt x 395.22656pt>
 File: ./images/structure.png Graphic file (type png)
 <use ./images/structure.png>
 Package pdftex.def Info: ./images/structure.png  used on input line 6.
@@ -306,36 +342,49 @@ Overfull \hbox (71.13188pt too wide) in paragraph at lines 6--7
  [][] 
  []
 
-<./images/VHDL_structure.png, id=20, 412.54124pt x 185.19188pt>
+<./images/VHDL_structure.png, id=21, 412.54124pt x 185.19188pt>
 File: ./images/VHDL_structure.png Graphic file (type png)
 <use ./images/VHDL_structure.png>
-Package pdftex.def Info: ./images/VHDL_structure.png  used on input line 17.
+Package pdftex.def Info: ./images/VHDL_structure.png  used on input line 18.
 (pdftex.def)             Requested size: 426.79134pt x 191.59183pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--22
+Underfull \hbox (badness 10000) in paragraph at lines 2--23
+
+ []
+
+[2
+
+ <./images/structure.png>]
+<./images/CSEA.png, id=26, 453.19313pt x 365.86688pt>
+File: ./images/CSEA.png Graphic file (type png)
+<use ./images/CSEA.png>
+Package pdftex.def Info: ./images/CSEA.png  used on input line 26.
+(pdftex.def)             Requested size: 284.52756pt x 229.69902pt.
+ [3 <./images/VHDL_structure.png> <./images/CSEA.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 39.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 39.
+<./images/immediate_gen.png, id=33, 688.82344pt x 258.21469pt>
+File: ./images/immediate_gen.png Graphic file (type png)
+<use ./images/immediate_gen.png>
+Package pdftex.def Info: ./images/immediate_gen.png  used on input line 53.
+(pdftex.def)             Requested size: 284.52756pt x 106.65671pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
 
  []
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 63--65
 
-<./images/CSEA.png, id=21, 453.19313pt x 365.86688pt>
-File: ./images/CSEA.png Graphic file (type png)
-<use ./images/CSEA.png>
-Package pdftex.def Info: ./images/CSEA.png  used on input line 25.
-(pdftex.def)             Requested size: 284.52756pt x 229.69902pt.
-[2
+ []
 
- <./images/structure.png>] [3 <./images/VHDL_structure.png> <./images/CSEA.png>
-]
-<./images/immediate_gen.png, id=32, 688.82344pt x 258.21469pt>
-File: ./images/immediate_gen.png Graphic file (type png)
-<use ./images/immediate_gen.png>
-Package pdftex.def Info: ./images/immediate_gen.png  used on input line 51.
-(pdftex.def)             Requested size: 284.52756pt x 106.65671pt.
-) (cap/cap3_Control_unit.tex [4 <./images/immediate_gen.png>] [5]
+[4 <./images/immediate_gen.png>]) (./cap/cap3_Control_unit.tex [5]
 Chapter 3.
-<./images/structure_CU.jpg, id=42, 600.74437pt x 306.39468pt>
+<./images/structure_CU.jpg, id=43, 600.74437pt x 306.39468pt>
 File: ./images/structure_CU.jpg Graphic file (type jpg)
 <use ./images/structure_CU.jpg>
 Package pdftex.def Info: ./images/structure_CU.jpg  used on input line 8.
@@ -345,28 +394,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--12
 
  []
 
-<./images/control_signals.jpg, id=43, 1205.50375pt x 1210.5225pt>
+<./images/control_signals.jpg, id=44, 1205.50375pt x 1210.5225pt>
 File: ./images/control_signals.jpg Graphic file (type jpg)
 <use ./images/control_signals.jpg>
-Package pdftex.def Info: ./images/control_signals.jpg  used on input line 21.
+Package pdftex.def Info: ./images/control_signals.jpg  used on input line 19.
 (pdftex.def)             Requested size: 455.24408pt x 457.12184pt.
 
-Overfull \hbox (14.22636pt too wide) in paragraph at lines 21--22
+Overfull \hbox (14.22636pt too wide) in paragraph at lines 19--20
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 14--27
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--27
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 14--27
+Underfull \hbox (badness 10000) in paragraph at lines 14--24
 
  []
 
@@ -375,108 +414,162 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6
 
- <./images/structure_CU.jpg>] [7 <./images/control_signals.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 38--41
+ <./images/structure_CU.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 36--39
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--41
+Underfull \hbox (badness 10000) in paragraph at lines 36--39
 
  []
 
-) (cap/cap4_Testbench.tex [8]
+[7 <./images/control_signals.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 62--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--66
+
+ []
+
+[8]) (./cap/cap4_Testbench.tex [9]
 Chapter 4.
-<./images/Testbench.png, id=54, 487.8225pt x 309.40594pt>
+<./images/Testbench.png, id=58, 487.8225pt x 309.40594pt>
 File: ./images/Testbench.png Graphic file (type png)
 <use ./images/Testbench.png>
 Package pdftex.def Info: ./images/Testbench.png  used on input line 4.
 (pdftex.def)             Requested size: 284.52756pt x 180.4659pt.
-<./images/Imem.png, id=55, 594.72188pt x 187.45032pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--21
+
+ []
+
+[10
+
+ <./images/Testbench.png>]
+<./images/Imem.png, id=63, 594.72188pt x 187.45032pt>
 File: ./images/Imem.png Graphic file (type png)
 <use ./images/Imem.png>
-Package pdftex.def Info: ./images/Imem.png  used on input line 18.
+Package pdftex.def Info: ./images/Imem.png  used on input line 27.
 (pdftex.def)             Requested size: 512.1496pt x 161.43294pt.
 
-Overfull \hbox (71.13188pt too wide) in paragraph at lines 18--19
+Overfull \hbox (71.13188pt too wide) in paragraph at lines 27--28
  [][] 
  []
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) (cap/cap5_Synt_Tim.tex [9
-
- <./images/Testbench.png>] [10 <./images/Imem.png>]
-Chapter 5.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--3
+[11 <./images/Imem.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
 
  []
 
-<./images/RISC_area.png, id=64, 713.66624pt x 414.79968pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--37
+
+ []
+
+<./images/TB_ABSV_waves.jpg, id=69, 944.7797pt x 613.54219pt>
+File: ./images/TB_ABSV_waves.jpg Graphic file (type jpg)
+<use ./images/TB_ABSV_waves.jpg>
+Package pdftex.def Info: ./images/TB_ABSV_waves.jpg  used on input line 40.
+(pdftex.def)             Requested size: 512.1496pt x 332.5998pt.
+
+Overfull \hbox (71.13188pt too wide) in paragraph at lines 40--41
+ [][] 
+ []
+
+) (./cap/cap5_Synt_Tim.tex [12 <./images/TB_ABSV_waves.jpg>]
+Chapter 5.
+<./images/RISC_area.png, id=73, 713.66624pt x 414.79968pt>
 File: ./images/RISC_area.png Graphic file (type png)
 <use ./images/RISC_area.png>
-Package pdftex.def Info: ./images/RISC_area.png  used on input line 7.
+Package pdftex.def Info: ./images/RISC_area.png  used on input line 8.
 (pdftex.def)             Requested size: 569.05511pt x 330.7642pt.
 
-Overfull \hbox (128.0374pt too wide) in paragraph at lines 7--8
+Overfull \hbox (128.0374pt too wide) in paragraph at lines 8--9
  [][] 
  []
 
-<./images/RISC_tim0.png, id=65, 469.755pt x 169.38281pt>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./images/RISC_tim0.png, id=74, 469.755pt x 169.38281pt>
 File: ./images/RISC_tim0.png Graphic file (type png)
 <use ./images/RISC_tim0.png>
-Package pdftex.def Info: ./images/RISC_tim0.png  used on input line 18.
+Package pdftex.def Info: ./images/RISC_tim0.png  used on input line 19.
 (pdftex.def)             Requested size: 512.1496pt x 184.6701pt.
 
-Overfull \hbox (71.13188pt too wide) in paragraph at lines 18--19
+Overfull \hbox (71.13188pt too wide) in paragraph at lines 19--20
  [][] 
  []
 
-<./images/RISC_tim1.png, id=66, 696.35156pt x 457.71pt>
+<./images/RISC_tim1.png, id=75, 696.35156pt x 457.71pt>
 File: ./images/RISC_tim1.png Graphic file (type png)
 <use ./images/RISC_tim1.png>
-Package pdftex.def Info: ./images/RISC_tim1.png  used on input line 24.
+Package pdftex.def Info: ./images/RISC_tim1.png  used on input line 25.
 (pdftex.def)             Requested size: 569.05511pt x 374.05353pt.
 
-Overfull \hbox (128.0374pt too wide) in paragraph at lines 24--25
+Overfull \hbox (128.0374pt too wide) in paragraph at lines 25--26
  [][] 
  []
 
-<./images/RISC_tim2.png, id=67, 584.93532pt x 423.08063pt>
+<./images/RISC_tim2.png, id=76, 584.93532pt x 423.08063pt>
 File: ./images/RISC_tim2.png Graphic file (type png)
 <use ./images/RISC_tim2.png>
-Package pdftex.def Info: ./images/RISC_tim2.png  used on input line 30.
+Package pdftex.def Info: ./images/RISC_tim2.png  used on input line 31.
 (pdftex.def)             Requested size: 569.05511pt x 411.63365pt.
 
-Overfull \hbox (128.0374pt too wide) in paragraph at lines 30--31
+Overfull \hbox (128.0374pt too wide) in paragraph at lines 31--32
  [][] 
  []
 
-<./images/RISC_tim3.png, id=68, 468.24937pt x 310.15875pt>
+<./images/RISC_tim3.png, id=77, 468.24937pt x 310.15875pt>
 File: ./images/RISC_tim3.png Graphic file (type png)
 <use ./images/RISC_tim3.png>
-Package pdftex.def Info: ./images/RISC_tim3.png  used on input line 36.
+Package pdftex.def Info: ./images/RISC_tim3.png  used on input line 37.
 (pdftex.def)             Requested size: 512.1496pt x 339.2779pt.
 
-Overfull \hbox (71.13188pt too wide) in paragraph at lines 36--37
+Overfull \hbox (71.13188pt too wide) in paragraph at lines 37--38
  [][] 
  []
 
-<./images/original_route.jpg, id=69, 528.47438pt x 514.92375pt>
+<./images/original_route.jpg, id=78, 528.47438pt x 514.92375pt>
 File: ./images/original_route.jpg Graphic file (type jpg)
 <use ./images/original_route.jpg>
-Package pdftex.def Info: ./images/original_route.jpg  used on input line 42.
+Package pdftex.def Info: ./images/original_route.jpg  used on input line 43.
 (pdftex.def)             Requested size: 512.1496pt x 499.04329pt.
 
-Overfull \hbox (71.13188pt too wide) in paragraph at lines 42--43
+Overfull \hbox (71.13188pt too wide) in paragraph at lines 43--44
  [][] 
  []
 
-) [11
+<./images/ABSV_route.jpg, id=79, 526.21594pt x 514.17094pt>
+File: ./images/ABSV_route.jpg Graphic file (type jpg)
+<use ./images/ABSV_route.jpg>
+Package pdftex.def Info: ./images/ABSV_route.jpg  used on input line 49.
+(pdftex.def)             Requested size: 512.1496pt x 500.44772pt.
 
- <./images/RISC_area.png>]
+Overfull \hbox (71.13188pt too wide) in paragraph at lines 49--50
+ [][] 
+ []
+
+)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -489,31 +582,42 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[12 <./images/RISC_tim0.png>] [13 <./images/RISC_tim1.png>] [14 <./images/RISC_
-tim2.png>] [15 <./images/RISC_tim3.png>] [16 <./images/original_route.jpg>]
-(Lab3_report.aux) ) 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13
+
+] [14 <./images/RISC_area.png> <./images/RISC_tim0.png>] [15 <./images/RISC_tim
+1.png>] [16 <./images/RISC_tim2.png>] [17 <./images/RISC_tim3.png>] [18 <./imag
+es/original_route.jpg>] [19 <./images/ABSV_route.jpg>] (./Lab3_report.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 5075 strings out of 479832
- 71343 string characters out of 2871057
- 546899 words of memory out of 3000000
- 21946 multiletter control sequences out of 15000+200000
- 540027 words of font info for 48 fonts, out of 3000000 for 9000
+ 4799 strings out of 492616
+ 65801 string characters out of 6129482
+ 330428 words of memory out of 5000000
+ 8602 multiletter control sequences out of 15000+600000
+ 8244 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,10n,72p,265b,263s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\pmich\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
-en/ec/dpi600\tcrm1000.pk><C:/Users/pmich/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmbx10.pfb><C:/Users/pmich/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pmich/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pmich/AppData/Loc
-al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pmich/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/p
-mich/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:
-/Users/pmich/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss1
-7.pfb><C:/Users/pmich/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmtt10.pfb>
-Output written on Lab3_report.pdf (18 pages, 1152964 bytes).
+ 41i,10n,43p,455b,313s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
+ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/lo
+cal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Lab3_report.pdf (21 pages, 1667208 bytes).
 PDF statistics:
- 124 PDF objects out of 1000 (max. 8388607)
+ 137 PDF objects out of 1000 (max. 8388607)
+ 76 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

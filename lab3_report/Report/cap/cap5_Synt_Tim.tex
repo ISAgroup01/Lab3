@@ -1,7 +1,8 @@
 \chapter{Synthesis AND Timing}
-We have synthetized the architecture and we have created the report for the area and the timing.\\
+We have synthesized the architecture and we have created the report for the area and the timing.\\
+Moreover we made sure that there are no latches in the memory elements of our design, checking the "elaborate.txt" file.
 \section{Area analysis}
-Firstly, after the synthesis, we have retrieved the area occupied by our processor.
+As a first step, after the synthesis, we have retrieved the area occupied by our processor.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=20cm]{./images/RISC_area}
@@ -9,10 +10,10 @@ Firstly, after the synthesis, we have retrieved the area occupied by our process
 	\label{fig5.1}
 \end{figure} 
 \section{Timing analysis}
-We have run the synthesis with a clock of 0s. So looking the slack,\\
+We have run the synthesis with a clock period of 0 seconds (to have a really high frequency). So looking the slack,\\
 we can retrieve the maximal clock frequency that our architecture can reach.
-Then we have applied that contraint and we have run again the synthesis.\\
-Finally we have implemented the routing phase. The result on Figure \ref{fig5.6}.
+Then we have applied that constraint and we have run again the synthesis.\\
+Finally we have implemented the routing phase. The result is on Figure \ref{fig5.6}.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=18cm]{./images/RISC_tim0}
@@ -40,6 +41,12 @@ Finally we have implemented the routing phase. The result on Figure \ref{fig5.6}
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=18cm]{./images/original_route}
-	\caption{Routing}
+	\caption{Routing of the original design}
+	\label{fig5.6}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=18cm]{./images/ABSV_route}
+	\caption{Routing of the design with ABSV functionality}
 	\label{fig5.6}
 \end{figure}
