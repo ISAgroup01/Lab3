@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.17)  20 FEB 2021 08:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.17)  21 FEB 2021 09:43
 entering extended mode
-**./homebook.tex
-(homebook.tex
+**./Lab3_report.tex
+(Lab3_report.tex
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-10-27> xparse <2020-03-03>
 (C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/base\book.cls
@@ -203,33 +203,33 @@ Package: amsthm 2020/05/29 v2.20.6
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
 \@indexfile=\write3
-\openout3 = `homebook.idx'.
+\openout3 = `Lab3_report.idx'.
 
 
-Writing index file homebook.idx
+Writing index file Lab3_report.idx
 
 (C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count272
 \l__pdf_internal_box=\box52
-) (homebook.aux)
-\openout1 = `homebook.aux'.
+) (Lab3_report.aux)
+\openout1 = `Lab3_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
 \c@lstlisting=\count273
 
 (C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
@@ -256,26 +256,26 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 <./logopoli.jpg, id=1, 573.8238pt x 565.1514pt>
 File: ./logopoli.jpg Graphic file (type jpg)
 <use ./logopoli.jpg>
-Package pdftex.def Info: ./logopoli.jpg  used on input line 117.
+Package pdftex.def Info: ./logopoli.jpg  used on input line 64.
 (pdftex.def)             Requested size: 56.9055pt x 56.04414pt.
  [1
 
 
 
 {C:/Users/pmich/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./logopoli.jpg>
-] (homebook.toc
-LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+] (Lab3_report.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
 
 (C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
 
 (C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write4
-\openout4 = `homebook.toc'.
+\openout4 = `Lab3_report.toc'.
 
 
 [1
@@ -284,68 +284,236 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (C:\Users\pmich\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-(Datapath.tex
+(cap/cap1_Intro.tex
 Chapter 1.
-<./images/structure.png, id=15, 699.36281pt x 395.22656pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--12
+
+ []
+
+) (cap/cap2_Datapath.tex [1
+
+
+]
+Chapter 2.
+<./images/structure.png, id=18, 699.36281pt x 395.22656pt>
 File: ./images/structure.png Graphic file (type png)
 <use ./images/structure.png>
-Package pdftex.def Info: ./images/structure.png  used on input line 7.
+Package pdftex.def Info: ./images/structure.png  used on input line 6.
 (pdftex.def)             Requested size: 512.1496pt x 289.44774pt.
 
-Overfull \hbox (71.13188pt too wide) in paragraph at lines 7--8
+Overfull \hbox (71.13188pt too wide) in paragraph at lines 6--7
  [][] 
  []
 
-<./images/VHDL_structure.png, id=17, 412.54124pt x 185.19188pt>
+<./images/VHDL_structure.png, id=20, 412.54124pt x 185.19188pt>
 File: ./images/VHDL_structure.png Graphic file (type png)
 <use ./images/VHDL_structure.png>
-Package pdftex.def Info: ./images/VHDL_structure.png  used on input line 18.
+Package pdftex.def Info: ./images/VHDL_structure.png  used on input line 17.
 (pdftex.def)             Requested size: 426.79134pt x 191.59183pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--23
+Underfull \hbox (badness 10000) in paragraph at lines 2--22
 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./images/CSEA.png, id=18, 453.19313pt x 365.86688pt>
+<./images/CSEA.png, id=21, 453.19313pt x 365.86688pt>
 File: ./images/CSEA.png Graphic file (type png)
 <use ./images/CSEA.png>
-Package pdftex.def Info: ./images/CSEA.png  used on input line 26.
+Package pdftex.def Info: ./images/CSEA.png  used on input line 25.
 (pdftex.def)             Requested size: 284.52756pt x 229.69902pt.
-[1
+[2
 
-
- <./images/structure.png>] [2 <./images/VHDL_structure.png> <./images/CSEA.png>
+ <./images/structure.png>] [3 <./images/VHDL_structure.png> <./images/CSEA.png>
 ]
-<./images/immediate_gen.png, id=29, 688.82344pt x 258.21469pt>
+<./images/immediate_gen.png, id=32, 688.82344pt x 258.21469pt>
 File: ./images/immediate_gen.png Graphic file (type png)
 <use ./images/immediate_gen.png>
-Package pdftex.def Info: ./images/immediate_gen.png  used on input line 52.
+Package pdftex.def Info: ./images/immediate_gen.png  used on input line 51.
 (pdftex.def)             Requested size: 284.52756pt x 106.65671pt.
-) [3 <./images/immediate_gen.png>] [4] (homebook.aux) ) 
+) (cap/cap3_Control_unit.tex [4 <./images/immediate_gen.png>] [5]
+Chapter 3.
+<./images/structure_CU.jpg, id=42, 600.74437pt x 306.39468pt>
+File: ./images/structure_CU.jpg Graphic file (type jpg)
+<use ./images/structure_CU.jpg>
+Package pdftex.def Info: ./images/structure_CU.jpg  used on input line 8.
+(pdftex.def)             Requested size: 341.43306pt x 174.14186pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--12
+
+ []
+
+<./images/control_signals.jpg, id=43, 1205.50375pt x 1210.5225pt>
+File: ./images/control_signals.jpg Graphic file (type jpg)
+<use ./images/control_signals.jpg>
+Package pdftex.def Info: ./images/control_signals.jpg  used on input line 21.
+(pdftex.def)             Requested size: 455.24408pt x 457.12184pt.
+
+Overfull \hbox (14.22636pt too wide) in paragraph at lines 21--22
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--27
+
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6
+
+ <./images/structure_CU.jpg>] [7 <./images/control_signals.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 38--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--41
+
+ []
+
+) (cap/cap4_Testbench.tex [8]
+Chapter 4.
+<./images/Testbench.png, id=54, 487.8225pt x 309.40594pt>
+File: ./images/Testbench.png Graphic file (type png)
+<use ./images/Testbench.png>
+Package pdftex.def Info: ./images/Testbench.png  used on input line 4.
+(pdftex.def)             Requested size: 284.52756pt x 180.4659pt.
+<./images/Imem.png, id=55, 594.72188pt x 187.45032pt>
+File: ./images/Imem.png Graphic file (type png)
+<use ./images/Imem.png>
+Package pdftex.def Info: ./images/Imem.png  used on input line 18.
+(pdftex.def)             Requested size: 512.1496pt x 161.43294pt.
+
+Overfull \hbox (71.13188pt too wide) in paragraph at lines 18--19
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (cap/cap5_Synt_Tim.tex [9
+
+ <./images/Testbench.png>] [10 <./images/Imem.png>]
+Chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+<./images/RISC_area.png, id=64, 713.66624pt x 414.79968pt>
+File: ./images/RISC_area.png Graphic file (type png)
+<use ./images/RISC_area.png>
+Package pdftex.def Info: ./images/RISC_area.png  used on input line 7.
+(pdftex.def)             Requested size: 569.05511pt x 330.7642pt.
+
+Overfull \hbox (128.0374pt too wide) in paragraph at lines 7--8
+ [][] 
+ []
+
+<./images/RISC_tim0.png, id=65, 469.755pt x 169.38281pt>
+File: ./images/RISC_tim0.png Graphic file (type png)
+<use ./images/RISC_tim0.png>
+Package pdftex.def Info: ./images/RISC_tim0.png  used on input line 18.
+(pdftex.def)             Requested size: 512.1496pt x 184.6701pt.
+
+Overfull \hbox (71.13188pt too wide) in paragraph at lines 18--19
+ [][] 
+ []
+
+<./images/RISC_tim1.png, id=66, 696.35156pt x 457.71pt>
+File: ./images/RISC_tim1.png Graphic file (type png)
+<use ./images/RISC_tim1.png>
+Package pdftex.def Info: ./images/RISC_tim1.png  used on input line 24.
+(pdftex.def)             Requested size: 569.05511pt x 374.05353pt.
+
+Overfull \hbox (128.0374pt too wide) in paragraph at lines 24--25
+ [][] 
+ []
+
+<./images/RISC_tim2.png, id=67, 584.93532pt x 423.08063pt>
+File: ./images/RISC_tim2.png Graphic file (type png)
+<use ./images/RISC_tim2.png>
+Package pdftex.def Info: ./images/RISC_tim2.png  used on input line 30.
+(pdftex.def)             Requested size: 569.05511pt x 411.63365pt.
+
+Overfull \hbox (128.0374pt too wide) in paragraph at lines 30--31
+ [][] 
+ []
+
+<./images/RISC_tim3.png, id=68, 468.24937pt x 310.15875pt>
+File: ./images/RISC_tim3.png Graphic file (type png)
+<use ./images/RISC_tim3.png>
+Package pdftex.def Info: ./images/RISC_tim3.png  used on input line 36.
+(pdftex.def)             Requested size: 512.1496pt x 339.2779pt.
+
+Overfull \hbox (71.13188pt too wide) in paragraph at lines 36--37
+ [][] 
+ []
+
+<./images/original_route.jpg, id=69, 528.47438pt x 514.92375pt>
+File: ./images/original_route.jpg Graphic file (type jpg)
+<use ./images/original_route.jpg>
+Package pdftex.def Info: ./images/original_route.jpg  used on input line 42.
+(pdftex.def)             Requested size: 512.1496pt x 499.04329pt.
+
+Overfull \hbox (71.13188pt too wide) in paragraph at lines 42--43
+ [][] 
+ []
+
+) [11
+
+ <./images/RISC_area.png>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12 <./images/RISC_tim0.png>] [13 <./images/RISC_tim1.png>] [14 <./images/RISC_
+tim2.png>] [15 <./images/RISC_tim3.png>] [16 <./images/original_route.jpg>]
+(Lab3_report.aux) ) 
 Here is how much of TeX's memory you used:
- 4962 strings out of 479832
- 68708 string characters out of 2871057
- 546784 words of memory out of 3000000
- 21858 multiletter control sequences out of 15000+200000
- 539859 words of font info for 47 fonts, out of 3000000 for 9000
+ 5075 strings out of 479832
+ 71343 string characters out of 2871057
+ 546899 words of memory out of 3000000
+ 21946 multiletter control sequences out of 15000+200000
+ 540027 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,10n,72p,227b,263s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\pmich\AppData
-\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/pmich/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users
-/pmich/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-<C:/Users/pmich/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
-r10.pfb><C:/Users/pmich/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb><C:/Users/pmich/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmr17.pfb><C:/Users/pmich/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmr7.pfb><C:/Users/pmich/AppData/Local/Programs/MiKTeX/fo
-nts/type1/public/amsfonts/cm/cmss17.pfb>
-Output written on homebook.pdf (6 pages, 395054 bytes).
+ 66i,10n,72p,265b,263s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\pmich\AppData\Local\MiKTeX\fonts/pk/ljfour/jknapp
+en/ec/dpi600\tcrm1000.pk><C:/Users/pmich/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmbx10.pfb><C:/Users/pmich/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pmich/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/pmich/AppData/Loc
+al/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pmich/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/p
+mich/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:
+/Users/pmich/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss1
+7.pfb><C:/Users/pmich/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmtt10.pfb>
+Output written on Lab3_report.pdf (18 pages, 1152964 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 124 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 

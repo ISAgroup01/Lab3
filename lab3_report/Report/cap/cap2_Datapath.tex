@@ -1,23 +1,22 @@
 \chapter{Datapath}
-We have implemented the VHDL architecture of the processor(Figure \ref{fig1}), splitted in 5 pipeline stages: \\
-Fetch, Decode, Execute, Mem, WriteBack. \\
-Instructions and datas of the entire procssor are represented on 32 bits. 
+We have implemented the VHDL architecture of the processor(Figure \ref{fig2.1}).
+Instruction and data of the entire procssor are represented on 32 bits. 
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=18cm]{./images/structure}
 	\caption{General structure}
-	\label{fig1}
+	\label{fig2.1}
 \end{figure}
 As specification says, Instruction and Data memory was not included. We have implemented it in the testbench.\\
 Here we have tried to impement most of the single blocks in a Structural way. \\
 Only Register file, alu and all filpflops are implemented as Behavioral.\\
 \\
-On Figure \ref{fig2} it is showed how we have organized the VHDL files.
+On Figure \ref{fig2.2} it is showed how we have organized the VHDL files.
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=15cm]{./images/VHDL_structure}
 	\caption{General VHDL structure}
-	\label{fig2}
+	\label{fig2.2}
 \end{figure}
 Now more details on singolar block implementation.
 \section{Fetch}
@@ -25,7 +24,7 @@ Now more details on singolar block implementation.
 	\centering
 	\includegraphics[width=10cm]{./images/CSEA}
 	\caption{CSEA structure}
-	\label{fig3}
+	\label{fig2.3}
 \end{figure}
 To update the PC we have implemented a Carry Select Adder. \\
 Each singolar blocks are compose of a 8 bit Ripple carry adder. In this way we have reduced the delay.
@@ -51,9 +50,10 @@ The Immediate\_generate block read the instruction and generate the Immediate va
 	\centering
 	\includegraphics[width=10cm]{./images/immediate_gen}
 	\caption{Instruction organization}
-	\label{fig4}
+	\label{fig2.4}
 \end{figure} 
 So based on which instruction we are decoding, organize a 32 bits Immediate value.
+Here we have placed the Control Unit, see next chapter for further details.
 \section{Execute}
 The adder that create the new program counter is again implemented with a 32 bits CSEA.
 Then we have the Alu that receive two inputs value and the Opcode specify which instruction implement.

@@ -1,7 +1,0 @@
-\babel@toc {english}{}
-\contentsline {chapter}{\numberline {1}Datapath}{1}{}%
-\contentsline {section}{\numberline {1.1}Fetch}{2}{}%
-\contentsline {section}{\numberline {1.2}Decode}{2}{}%
-\contentsline {section}{\numberline {1.3}Execute}{3}{}%
-\contentsline {section}{\numberline {1.4}Memory}{3}{}%
-\contentsline {section}{\numberline {1.5}Write back}{3}{}%
